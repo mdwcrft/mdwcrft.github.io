@@ -1,2 +1,1 @@
-# mdwcrft.github.io
-My website
+Personal Website for Chad
