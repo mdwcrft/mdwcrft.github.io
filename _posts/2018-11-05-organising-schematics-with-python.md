@@ -2,6 +2,7 @@
 title: "Organising Schematics with Python"
 date: 2018-11-05
 tags: []
+excerpt: ":file_folder:"
 mathjax: true
 ---
 
