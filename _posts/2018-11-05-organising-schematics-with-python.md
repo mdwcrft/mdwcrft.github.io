@@ -34,7 +34,10 @@ The full scripts are [caps.py](https://github.com/mdwcrft/python_scripts/blob/ma
 
 ---
 
-### caps.py
+### caps.py  
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-run-caps.gif" alt="Running caps.py">   
+
 This program is a simple example of using the os module to automate tedious tasks in the local file system. At its core the program is a cascading `if` statement where each `if` corresponds to a subfolder. The script keeps digging until it finds files, it then renames them with capital letters.  
 The following is the first `if` statement which applies to the highest level folder.  
 
