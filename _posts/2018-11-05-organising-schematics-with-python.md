@@ -10,7 +10,7 @@ I was given a folder :file_folder: of electrical and mechanical drawings in CAD 
 My task was to update all the drawings, deleting old ones and adding modifications. I was to then organise them in a logical structure and create an excel database for the drawings. I did this all manually, the result of my efforts is shown below.
 
 <img src="/assets/images/2-orig-excel.png" alt="The drawings database">
-![The drawings database2]({{ site.url }}/assets/images/2-orig-excel.png)
+![The drawings database2]({{ site.url }}{{ site.baseurl }}/assets/images/2-orig-excel.png)
 
 The structure of the drawings is hierarchical, from system -> subsystem -> enclosure -> subrack -> drawing. However, some rows are just system -> drawing, or other variations of the hierarchy. There are also many rows with missing information and many missing files.
 
