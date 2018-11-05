@@ -1,15 +1,15 @@
 ---
-title: "Organising Schematics with Python :file_folder:"
+title: "Organising Schematics with Python"
 date: 2018-11-05
 tags: []
 mathjax: true
 ---
 
-I was given a folder of electrical and mechanical drawings in CAD file format to tidy up. These drawings all relate to Machine Instrumentation and Protection (MIPS) on the [JET Tokamak](https://en.wikipedia.org/wiki/Joint_European_Torus). 
+I was given a folder :file_folder: of electrical and mechanical drawings in CAD file format to tidy up. These drawings all relate to Machine Instrumentation and Protection (MIPS) on the [JET Tokamak](https://en.wikipedia.org/wiki/Joint_European_Torus). 
 
 My task was to update all the drawings, deleting old ones and adding modifications. I was to then organise them in a logical structure and create an excel database for the drawings. I did this all manually, the result of my efforts is shown below.
 
-<img src="{{ site.url }}/assets/images/2-orig-excel.png" alt="The drawings database">
+<img src="/assets/images/2-orig-excel.png" alt="The drawings database">
 ![The drawings database2]({{ site.url }}/assets/images/2-orig-excel.png)
 
 The structure of the drawings is hierarchical, from system -> subsystem -> enclosure -> subrack -> drawing. However, some rows are just system -> drawing, or other variations of the hierarchy. There are also many rows with missing information and many missing files.
