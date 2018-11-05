@@ -9,7 +9,7 @@ I was given a folder of electrical and mechanical drawings in CAD file format to
 
 My task was to update all the drawings, deleting old ones and adding modifications. I was to then organise them in a logical structure and create an excel database for the drawings. I did this all manually, the result of my efforts is shown below.
 
-<img src="{{ site.url }}/assets/images/organising-schematics-python/orig-excel.png" alt="The drawings database">
+<img src="{{ site.url }}/assets/images/2-orig-excel.png" alt="The drawings database">
 
 The structure of the drawings is hierarchical, from system -> subsystem -> enclosure -> subrack -> drawing. However, some rows are just system -> drawing, or other variations of the hierarchy. There are also many rows with missing information and many missing files.
 
@@ -104,7 +104,7 @@ if name[i] != 'nan':
 This is done for the name, drawing no., and sheet no. columns.  
 Finally `linkedworkbook.close()` to close and save the new excel spreadsheet. The output is shown below. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/organising-schematics-python/linked-excel.png" alt="The final product">  
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-linked-excel.png" alt="The final product">  
 
 Clicking any link associated with a folder will open that folder in the file explorer. Clicking a CAD drawing name will open that drawing in AutoCAD. The hope is that this database can be used to quickly find drawings and schematics.  
 
