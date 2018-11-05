@@ -5,13 +5,23 @@ tags: []
 mathjax: true
 ---
 
-I was given a folder :file_folder: of electrical and mechanical drawings in CAD file format to tidy up. These drawings all relate to Machine Instrumentation and Protection (MIPS) on the [JET Tokamak](https://en.wikipedia.org/wiki/Joint_European_Torus). 
+I was given a folder of electrical and mechanical drawings in CAD file format to tidy up. These drawings all relate to Machine Instrumentation and Protection (MIPS) on the [JET Tokamak](https://en.wikipedia.org/wiki/Joint_European_Torus). 
 
 My task was to update all the drawings, deleting old ones and adding modifications. I was to then organise them in a logical structure and create an excel database for the drawings. I did this all manually, the result of my efforts is shown below.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-orig-excel.PNG" alt="The drawings database">
 
-The structure of the drawings is hierarchical, from system -> subsystem -> enclosure -> subrack -> drawing. However, some rows are just system -> drawing, or other variations of the hierarchy. There are also many rows with missing information and many missing files.
+The structure of the drawings is hierarchical; 
+- :file_folder:system 
+  - :file_folder:subsystem 
+    - :file_folder:enclosure 
+      - :file_folder:subrack 
+        - :page_with_curl:drawing  
+
+However, some rows are just  
+- :file_folder:system 
+  - :page_with_curl:drawing  
+or other variations of the hierarchy. There are also many rows with missing information and many missing files.
 
 To make this database more useful I decided to insert hyperlinks in each cell to link to the relevant folder or file. There are over 300 files here so after reading [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) I decided to apply some python automation to the task.
 
