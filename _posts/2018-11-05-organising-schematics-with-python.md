@@ -10,6 +10,7 @@ I was given a folder of electrical and mechanical drawings in CAD file format to
 My task was to update all the drawings, deleting old ones and adding modifications. I was to then organise them in a logical structure and create an excel database for the drawings. I did this all manually, the result of my efforts is shown below.
 
 <img src="{{ site.url }}/assets/images/2-orig-excel.png" alt="The drawings database">
+![The drawings database2]({{ site.url }}/assets/images/2-orig-excel.png)
 
 The structure of the drawings is hierarchical, from system -> subsystem -> enclosure -> subrack -> drawing. However, some rows are just system -> drawing, or other variations of the hierarchy. There are also many rows with missing information and many missing files.
 
@@ -35,6 +36,7 @@ if os.path.isdir(path):
                sub1folderpath = os.path.join(str(folderpath), str(sub1folder))
 
 ### ……. Cascading through subfolders …….
+
      elif os.path.isfile(folderpath):
            #print(folderpath)
            os.rename(folderpath, folderpath.upper())
