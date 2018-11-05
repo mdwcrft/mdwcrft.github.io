@@ -12,18 +12,17 @@ My task was to update all the drawings, deleting old ones and adding modificatio
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-orig-excel.PNG" alt="The drawings database">
 
-The structure of the drawings is hierarchical; 
-- :file_folder:system 
+The structure of the drawings is hierarchical, but drawings can be found at any level. 
+- :file_folder:system
+  - :page_with_curl:drawing  
   - :file_folder:subsystem 
+    - :page_with_curl:drawing  
     - :file_folder:enclosure 
+      - :page_with_curl:drawing  
       - :file_folder:subrack 
         - :page_with_curl:drawing  
 
-However, some rows are just  
-- :file_folder:system 
-  - :page_with_curl:drawing  
-
-or other variations of the hierarchy. There are also many rows with missing information and many missing files.
+There are also many rows with missing information and many missing files.
 
 To make this database more useful I decided to insert hyperlinks in each cell to link to the relevant folder or file. There are over 300 files here so after reading [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) I decided to apply some python automation to the task.
 
