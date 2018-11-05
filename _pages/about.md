@@ -1,6 +1,8 @@
 ---
-title: "About"
 permalink: /about/
+author_profile: true
 ---
 
-This is my about page
+
+
+This website was built using [Github Pages](https://pages.github.com/), [Jekyll](https://jekyllrb.com/), and [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/).
