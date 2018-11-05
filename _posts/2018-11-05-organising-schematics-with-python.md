@@ -9,16 +9,15 @@ I was given a folder :file_folder: of electrical and mechanical drawings in CAD 
 
 My task was to update all the drawings, deleting old ones and adding modifications. I was to then organise them in a logical structure and create an excel database for the drawings. I did this all manually, the result of my efforts is shown below.
 
-<img src="/assets/images/2-orig-excel.PNG" alt="The drawings database">
-![The drawings database2]({{ site.url }}{{ site.baseurl }}/assets/images/2-orig-excel.PNG)
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-orig-excel.PNG" alt="The drawings database">
 
 The structure of the drawings is hierarchical, from system -> subsystem -> enclosure -> subrack -> drawing. However, some rows are just system -> drawing, or other variations of the hierarchy. There are also many rows with missing information and many missing files.
 
 To make this database more useful I decided to insert hyperlinks in each cell to link to the relevant folder or file. There are over 300 files here so after reading [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) I decided to apply some python automation to the task.
 
 I automated 2 tasks; 
-Capitalise all folder and file names in the database
-Add hyperlinks to all folders and files within an excel sheet
+- Capitalise all folder and file names in the database
+- Add hyperlinks to all folders and files within an excel sheet
 
 The full scripts are [caps.py](https://github.com/mdwcrft/python_scripts/blob/master/caps.py) and [linker.py](https://github.com/mdwcrft/python_scripts/blob/master/linker.py), they are both in my Github [python-scripts](https://github.com/mdwcrft/python_scripts) folder.
 
@@ -106,7 +105,7 @@ if name[i] != 'nan':
 This is done for the name, drawing no., and sheet no. columns.  
 Finally `linkedworkbook.close()` to close and save the new excel spreadsheet. The output is shown below. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-linked-excel.png" alt="The final product">  
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-linked-excel.PNG" alt="The final product">  
 
 Clicking any link associated with a folder will open that folder in the file explorer. Clicking a CAD drawing name will open that drawing in AutoCAD. The hope is that this database can be used to quickly find drawings and schematics.  
 
