@@ -69,6 +69,9 @@ else:
 ---
 
 ### linker.py
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-run-linker.gif" alt="Running linker.py">   
+
 The linking program is slightly more complex. First we get the root folder of the database and the csv file name from the user and make sure these things exist. Then create an empty lists for each column like `system = []`.  
 I am using the [XlsxWriter](https://xlsxwriter.readthedocs.io) module to create a new spreadsheet in xlsx form which is identical to the original but with all cells linked to their folder or file.  
 Some set up is required to get this new spreadsheet ready.  
