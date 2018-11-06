@@ -13,14 +13,14 @@ My task was to update all the drawings, deleting old ones and adding modificatio
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2-orig-excel.PNG" alt="The drawings database">
 
 The structure of the drawings is hierarchical, but drawings can be found at any level. 
-:file_folder:system
-  :page_with_curl:drawing  
-  :file_folder:subsystem 
-    :page_with_curl:drawing  
-    :file_folder:enclosure 
-      :page_with_curl:drawing  
-      :file_folder:subrack 
-        :page_with_curl:drawing  
+- :file_folder:system
+  - :page_with_curl:drawing  
+  - :file_folder:subsystem 
+    - :page_with_curl:drawing  
+    - :file_folder:enclosure 
+      - :page_with_curl:drawing  
+      - :file_folder:subrack 
+        - :page_with_curl:drawing  
 
 There are also many rows with missing information and many missing files.
 
