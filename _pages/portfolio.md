@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /projects/
+permalink: /portfolio/
 author_profile: false
 
 feature_row1:
