@@ -16,7 +16,8 @@ These power supplies must be tested before operations by pulsing them onto a 'du
 Due to the voltages involved the supply is also required to charge up a DC link before the full pulse and decharge it after. The timing should look like this:
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-timing.jpg" alt="Some alt text">
 
-The requirements are summarised as follows.  
+The requirements are summarised as follows.
+
 |Output|Description|
 |----------|----------|
 |G1 Enable|Enable DC link for 13 seconds|
