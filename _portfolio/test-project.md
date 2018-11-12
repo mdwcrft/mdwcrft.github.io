@@ -1,6 +1,7 @@
 ---
 title: "Foo Bar Identity"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+collection: portfolio
 header:
   image: https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-1-th.jpg
 ---
