@@ -36,6 +36,6 @@ feature_row2:
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
 
-{% include feature_row1 %}
+{% include feature_row id="feature_row1" %}
 
-{% include feature_row2 %}
+{% include feature_row id="feature_row2" %}
