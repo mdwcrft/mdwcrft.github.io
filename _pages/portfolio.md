@@ -5,7 +5,7 @@ permalink: /portfolio/
 author_profile: false
 
 feature_row1:
-  - image_path: /assets/images/p1.PNG
+  - image_path: /assets/images/p1-cover.PNG
     alt: "Embedded Power Supply Control Card"
     title: "Embedded Power Supply Control Card"
     excerpt: "Designing a PCB from Scratch with Proteus and ARM MBED"

@@ -5,7 +5,7 @@ collection: portfolio
 classes: wide
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1.PNG" alt="Some alt text">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-cover.PNG" alt="Some alt text">
 
 ---
 
@@ -15,3 +15,4 @@ These power supplies must be tested before operations by pulsing them onto a 'du
 
 
 Due to the voltages involved the supply is required to charge up a DC link before the full pulse. The timing should look like this:
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-timing.jpg" alt="Some alt text">
