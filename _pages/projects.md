@@ -8,7 +8,7 @@ feature_row1:
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+    url: "_portfolio/test-project.md"
   - image_path: https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder 2"
@@ -34,6 +34,6 @@ feature_row2:
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
 
-{% include feature_row id="feature_row1" %}
-
 {% include feature_row id="feature_row2" %}
+
+{% include feature_row id="feature_row1" %}
