@@ -2,6 +2,7 @@
 title: "Embedded Power Supply Control Card"
 excerpt: "Embedded Power Supply Control Card"
 collection: portfolio
+classes: wide
 ---
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1.PNG" alt="Some alt text">
