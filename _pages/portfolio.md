@@ -8,7 +8,7 @@ feature_row1:
   - image_path: /assets/images/p1.PNG
     alt: "Embedded Power Supply Control Card"
     title: "Embedded Power Supply Control Card"
-    excerpt: "Planning and Specification"
+    excerpt: "Designing a PCB from Scratch with Proteus and ARM MBED"
     url: "/portfolio/embed-PCB"
   - image_path: 
     alt: ""
