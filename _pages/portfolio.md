@@ -1,4 +1,5 @@
 ---
+title: "Portfolio"
 layout: splash
 permalink: /portfolio/
 author_profile: false
@@ -8,7 +9,7 @@ feature_row1:
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "portfolio/test-project"
+    url: "/portfolio/test-project"
   - image_path: https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder 2"
