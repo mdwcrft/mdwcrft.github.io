@@ -79,7 +79,18 @@ This program is very simple, it takes the following actions in order:
 Once the program was sufficiently tested on the development board ([Nucleo-F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html)) a full prototype board was assembled. 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-prototype.jpg" alt="Prototype board">
 
-This was fully tested on the plant and operated as expected. The next stage was to design a PCB layout in Proteus, to be sent out for procurement.
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-PCB-layout.PNG" alt="PCB Layout" caption="PCB Layout">
+This was fully tested on the plant and operated as expected.  
 
-This design 
+The design was then taken from schematic to PCB layout in Proteus. A two layer design with a single ground plane was used. A front panel for the board was also designed, insuring alignment with the fibre transmitters and screw holes. 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-PCB-layout.PNG" alt="PCB Layout">
+
+This design could be improved as there are some choke-points within the ground plane. A future revision may re-track the lines to more uniformly cover the top and bottom layers. Note: this design does not include programming/debugging terminals. The main power connector is off-screen to the right.  
+
+Proteus can also make a 3D visual to show how the final component will look.  
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-PCB-3D.PNG" alt="3D Visualiser">  
+
+The final stage of the process is generating a Bill of Materials (BOM) that specifies the components to be used on the final PCB. This involves searching component sites ([RS](https://uk.rs-online.com/web/), [Mouser](https://www.mouser.co.uk/), [Farnell](https://uk.farnell.com/)), reading datasheets, and sometimes testing components in a lab. For example I tested the current consumption of the LED, Fibre Transmitter, and MOSFET in series to ensure the correct resistor value to use above them.  
+
+Proteus is used again to generate [Gerber files](https://en.wikipedia.org/wiki/Gerber_format) which are sent, along with the BOM, to a manufacturer. 
+
+My board has not yet been manufactured but I will update this post with a picture and an example operation gif when it is.
