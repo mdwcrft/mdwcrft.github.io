@@ -5,49 +5,18 @@ author_profile: true
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* 1st Class BEng Hons Electrical and Electronic Engineering with Management: The University of Nottingham, UK [2014-2017]
+  * Erasmus Program: Lund University, Sweden [2015-2016]
+  * Immersion Program: Sichuan University, China [2016]
+  * Advantage Award
+* IPMA Level D, SCQF Level 7 Project Management Qualification: Association for Project Management [2018]
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Junior Data Analyst: Kubrick Group [2019-Present]
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Graduate Electrical Engineer, Graduate C&I Engineer: UKAEA [2017-2018]
+  * Worked on the Joint European Torus as part of the IET accredited UKAEA graduate scheme.
+  * Electrical Engineer with Neutral Beam Power Supplies group [8 Months]
+  * C&I Engineer with Machine Instrumentation and Protection group [10 Months]
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
