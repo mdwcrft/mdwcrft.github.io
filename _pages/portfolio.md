@@ -10,11 +10,11 @@ feature_row1:
     title: "Embedded Power Supply Control Card"
     excerpt: "Designing a PCB from Scratch with Proteus and ARM MBED"
     url: "/portfolio/embed-PCB"
-  - image_path: 
-    alt: ""
-    title: ""
-    excerpt: ""
-    url: ""
+  - image_path: /assets/images/p2-cover.PNG
+    alt: "Optimizing Power Grids in Rwanda"
+    title: "Optimizing Power Grids in Rwanda"
+    excerpt: "Study on optimal grid architectures for Sub-Saharan communities"
+    url: "/portfolio/optimizing-power-grids"
   - image_path: 
     title: ""
     alt: ""
