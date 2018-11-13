@@ -1,6 +1,7 @@
 ---
 permalink: /cv/
 author_profile: true
+title: 'Curriculum Vitae'
 ---
 
 Education
@@ -19,4 +20,3 @@ Work experience
   * Worked on the Joint European Torus as part of the IET accredited UKAEA graduate scheme.
   * Electrical Engineer with Neutral Beam Power Supplies group [8 Months]
   * C&I Engineer with Machine Instrumentation and Protection group [10 Months]
-
