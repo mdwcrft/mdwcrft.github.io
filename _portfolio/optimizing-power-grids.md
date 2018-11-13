@@ -10,8 +10,9 @@ This is a summary of my 2017 degree dissertation, the full paper can be found [h
 
 Sub-Saharan Africa, broadly defined as the total area within and south of the Sahara Desert, has by far the lowest levels of electricity access of any region in the world.  
 
-<figure style="width: 300px" class="align-right">
+<figure style="width: 500px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-electrification.png" alt="Electrification rate by region"> 
   <figcaption>Rates of Electricity Access in the Developing World</figcaption>
 </figure> 
  
+This text should be to the left of the figure.
