@@ -11,8 +11,8 @@ feature_row1:
     excerpt: "Designing a PCB from Scratch with Proteus and ARM MBED"
     url: "/portfolio/embed-PCB"
   - image_path: /assets/images/p2-cover.png
-    alt: "Optimizing Power Grids in Rwanda"
-    title: "Optimizing Power Grids in Rwanda"
+    alt: "Optimizing Power Grids for rural Rwanda"
+    title: "Optimizing Power Grids for rural Rwanda"
     excerpt: "A study on optimal grid architectures for Sub-Saharan communities"
     url: "/portfolio/optimizing-power-grids"
   - image_path: /assets/images/p3-cover.png
