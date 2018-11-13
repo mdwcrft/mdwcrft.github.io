@@ -23,22 +23,20 @@ Due to the voltages involved the supply is also required to charge up a DC link 
 |FBIS|Constant 5kHz safety signal|
 |Output 4|Optional manual output|
 
-The timing should look like this:
-
+The timing should look like this:  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-timing.jpg" alt="Pulse Timing Graph">  
 
 ## Design
-The cubicle that will host the card has an 18V supply rail that will be used to power the card. The first step is to convert from +18V to +5V using a voltage regulator and to smooth the input with decoupling capacitors. 
-
+The cubicle that will host the card has an 18V supply rail that will be used to power the card. The first step is to convert from +18V to +5V using a voltage regulator and to smooth the input with decoupling capacitors.  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-regulation.PNG" alt="Input Power Regulation">
 
-The basic switched fibre transmitter is operated via a MOSFET (BS170) with a gate connected to the control source. There is also a status LED, two decoupling capacitors, and an input resistor to maintain correct current. The simplest set up is output 4, the manual switched output.
+The basic switched fibre transmitter is operated via a MOSFET (BS170) with a gate connected to the control source. There is also a status LED, two decoupling capacitors, and an input resistor to maintain correct current. The simplest set up is output 4, the manual switched output.  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-manual.PNG" alt="Manual Switched Output">
 
-The other transmitters have the same peripheral hardware, each with a different control source connected to the MOSFET. For the safety signal this is an astable 555 timer, set up to output a constant 5kHz oscillation. 
+The other transmitters have the same peripheral hardware, each with a different control source connected to the MOSFET. For the safety signal this is an astable 555 timer, set up to output a constant 5kHz oscillation.  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-FBIS.PNG" alt="5Khz Safety Signal Output">
 
-The control source for the main outputs, G1 Enable and G1 On, is an MCU ([STM32F401RE](https://www.st.com/en/microcontrollers/stm32f401re.html)). The MCU is connected to power through decoupling capacitors and is triggered by a push button. There are also various connections for USB and JTAG to enable flexibility in programming of the final product.
+The control source for the main outputs, G1 Enable and G1 On, is an MCU ([STM32F401RE](https://www.st.com/en/microcontrollers/stm32f401re.html)). The MCU is connected to power through decoupling capacitors and is triggered by a push button. There are also various connections for USB and JTAG to enable flexibility in programming of the final product.  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-main.PNG" alt="G1 En & G1 On Output">
 
 The code for the MCU was written in C++ using the [ARM MBED](https://www.mbed.com/) environment. 
@@ -76,12 +74,12 @@ This program is very simple, it takes the following actions in order:
 5. Wait for new press  
 
 ## Manufacture
-Once the program was sufficiently tested on the development board ([Nucleo-F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html)) a full prototype board was assembled. 
+Once the program was sufficiently tested on the development board ([Nucleo-F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html)) a full prototype board was assembled.  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-prototype.jpg" alt="Prototype board">
 
 This was fully tested on the plant and operated as expected.  
 
-The design was then taken from schematic to PCB layout in Proteus. A two layer design with a single ground plane was used. A front panel for the board was also designed, insuring alignment with the fibre transmitters and screw holes. 
+The design was then taken from schematic to PCB layout in Proteus. A two layer design with a single ground plane was used. A front panel for the board was also designed, insuring alignment with the fibre transmitters and screw holes.  
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-PCB-layout.PNG" alt="PCB Layout">
 
 This design could be improved as there are some choke-points within the ground plane. A future revision may re-track the lines to more uniformly cover the top and bottom layers. Note: this design does not include programming/debugging terminals. The main power connector is off-screen to the right.  
