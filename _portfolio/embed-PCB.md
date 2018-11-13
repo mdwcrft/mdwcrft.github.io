@@ -41,7 +41,7 @@ The other transmitters have the same peripheral hardware, each with a different 
 The control source for the main outputs, G1 Enable and G1 On, is an MCU ([STM32F401RE](https://www.st.com/en/microcontrollers/stm32f401re.html)). The MCU is connected to power through decoupling capacitors and is triggered by a push button. There are also various connections for USB and JTAG to enable flexibility in programming of the final product.
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-main.PNG" alt="G1 En & G1 On Output">
 
-The code for the MCU was written in C++ using the ARM MBED environment. 
+The code for the MCU was written in C++ using the [ARM MBED](https://www.mbed.com/) environment. 
 ```cpp
 #include "mbed.h"
 
@@ -80,4 +80,6 @@ Once the program was sufficiently tested on the development board ([Nucleo-F401R
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-prototype.jpg" alt="Prototype board">
 
 This was fully tested on the plant and operated as expected. The next stage was to design a PCB layout in Proteus, to be sent out for procurement.
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-PCB-layout.PNG" alt="PCB Layout" caption="PCB Layout">
 
+This design 
