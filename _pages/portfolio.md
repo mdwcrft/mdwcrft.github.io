@@ -13,13 +13,13 @@ feature_row1:
   - image_path: /assets/images/p2-cover.png
     alt: "Optimizing Power Grids in Rwanda"
     title: "Optimizing Power Grids in Rwanda"
-    excerpt: "Study on optimal grid architectures for Sub-Saharan communities"
+    excerpt: "A study on optimal grid architectures for Sub-Saharan communities"
     url: "/portfolio/optimizing-power-grids"
-  - image_path: 
-    title: ""
-    alt: ""
-    excerpt: ""
-    url: ""
+  - image_path: /assets/images/p2-cover.png
+    title: "Analysis of a Permanent Magnet Synchronous Machine"
+    alt: "Analysis of a Permanent Magnet Synchronous Machine"
+    excerpt: "Using MATLAB and FEMM to analyze magnetic rotors"
+    url: "/portfolio/permanent-magnet-analysis"
 ---
 
 <!-- {% include feature_row id="feature_row3" %} -->
