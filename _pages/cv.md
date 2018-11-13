@@ -4,16 +4,14 @@ author_profile: true
 title: 'Curriculum Vitae'
 ---
 
-Education
-======
+## Education
 * 1st Class BEng Hons Electrical and Electronic Engineering with Management: The University of Nottingham, UK [2014-2017]
   * Erasmus Program: Lund University, Sweden [2015-2016]
   * Immersion Program: Sichuan University, China [2016]
   * Advantage Award
 * IPMA Level D, SCQF Level 7 Project Management Qualification: Association for Project Management [2018]
 
-Work experience
-======
+## Work experience
 * Junior Data Analyst: Kubrick Group [2019-Present]
 
 * Graduate Electrical Engineer, Graduate C&I Engineer: UKAEA [2017-2018]
