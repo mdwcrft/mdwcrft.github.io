@@ -5,9 +5,8 @@ collection: portfolio
 classes: wide
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-cover.PNG" alt="Some alt text">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-cover.PNG" alt="Some alt text">  
 
----
 
 ## Background
 
@@ -26,9 +25,7 @@ Due to the voltages involved the supply is also required to charge up a DC link 
 
 The timing should look like this:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-timing.jpg" alt="Pulse Timing Graph">
-
----
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-timing.jpg" alt="Pulse Timing Graph">  
 
 ## Design
 The cubicle that will host the card has an 18V supply rail that will be used to power the card. The first step is to convert from +18V to +5V using a voltage regulator and to smooth the input with decoupling capacitors. 
@@ -76,9 +73,7 @@ This program is very simple, it takes the following actions in order:
 2. Define timing sequence for outputs
 3. Set internal pull-up resistor for button
 4. Run sequence when button pressed
-5. Wait for new press
-
----
+5. Wait for new press  
 
 ## Manufacture
 Once the program was sufficiently tested on the development board ([Nucleo-F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html)) a full prototype board was assembled. 
