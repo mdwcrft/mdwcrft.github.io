@@ -87,7 +87,7 @@ The design was then taken from schematic to PCB layout in Proteus. A two layer d
 This design could be improved as there are some choke-points within the ground plane. A future revision may re-track the lines to more uniformly cover the top and bottom layers. Note: this design does not include programming/debugging terminals. The main power connector is off-screen to the right.  
 
 Proteus can also make a 3D visual to show how the final component will look.  
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-PCB-3D.PNG" alt="3D Visualiser">  
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-3D.PNG" alt="3D Visual">  
 
 The final stage of the process is generating a Bill of Materials (BOM) that specifies the components to be used on the final PCB. This involves searching component sites ([RS](https://uk.rs-online.com/web/), [Mouser](https://www.mouser.co.uk/), [Farnell](https://uk.farnell.com/)), reading datasheets, and sometimes testing components in a lab. For example I tested the current consumption of the LED, Fibre Transmitter, and MOSFET in series to ensure the correct resistor value to use above them.  
 
