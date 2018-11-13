@@ -2,6 +2,7 @@
 title: "Embedded Power Supply Control Card"
 excerpt: "Embedded Power Supply Control Card"
 collection: portfolio
+author_profile: false
 classes: wide
 ---
 

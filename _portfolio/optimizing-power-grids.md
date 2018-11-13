@@ -2,6 +2,7 @@
 title: "Optimizing Power Grids for Rural Rwanda"
 excerpt: "Optimizing Power Grids for Rural Rwanda"
 collection: portfolio
+author_profile: false
 classes: wide
 ---
 This is a summary of my 2017 degree dissertation, the full paper can be found [here](/assets/papers/Power-Grid-Architectures-for-Sub-Saharan-Africa.pdf).
@@ -11,8 +12,7 @@ This is a summary of my 2017 degree dissertation, the full paper can be found [h
 Sub-Saharan Africa, broadly defined as the total area within and south of the Sahara Desert, has by far the lowest levels of electricity access of any region in the world.
 
 <figure style="width: 600px" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-electrification.png" alt="Electrification rate by region"> 
-  <figcaption>Rates of Electricity Access in the Developing World</figcaption>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-electrification.png" alt="Rates of Electricity Access in the Developing World"> 
 </figure> 
  
 This problem is even more severe for rural communities that are outside the reach of national or international grid systems. There are many reasons for this particular inequality; politics, infrastructure, and geography all play a part. One factor unique to Sub-Saharan Africa, compared to other low-income region, is the incredibly low population density (~45 people per sq. km compared to ~375 for South Asia) [source](https://data.worldbank.org/indicator/EN.POP.DNST?locations=ZG-8S-Z4). Transporting energy costs money and with a sparse rural population it just isn't cost effective to extend High Voltage power grids. 
