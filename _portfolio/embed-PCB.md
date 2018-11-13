@@ -9,7 +9,7 @@ classes: wide
 
 ---
 
-#### Background
+## Background
 
 This project was taken while working on the [Joint European Torus](https://en.wikipedia.org/wiki/Joint_European_Torus), the worlds largest nuclear fusion device. Creating [fusion power](https://en.wikipedia.org/wiki/Fusion_power) requires a huge amount of energy and most of this is supplied by [Neutral Beam Injectors](https://en.wikipedia.org/wiki/Neutral_beam_injection). Neutral beams are created by accelerating positive Hydrogen ions towards a neutralising gas. The neutral particles then continue their path into the plasma, adding energy by collision. To get the particles to high enough speeds they are accelerated towards a grid (Grid 1) which is supplied by a high voltage power supply (~130kV).  
 
@@ -28,7 +28,9 @@ The timing should look like this:
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-timing.jpg" alt="Pulse Timing Graph">
 
-#### Design
+---
+
+## Design
 The cubicle that will host the card has an 18V supply rail that will be used to power the card. The first step is to convert from +18V to +5V using a voltage regulator and to smooth the input with decoupling capacitors. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-regulation.PNG" alt="Input Power Regulation">
@@ -70,13 +72,15 @@ int main() {
 }
 ```
 This program is very simple, it takes the following actions in order:
-1.) Define pins to use
-2.) Define timing sequence for outputs
-3.) Set internal pull-up resistor for button
-4.) Run sequence when button pressed
-5.) Wait for new press
+1. Define pins to use
+2. Define timing sequence for outputs
+3. Set internal pull-up resistor for button
+4. Run sequence when button pressed
+5. Wait for new press
 
-#### Manufacture
+---
+
+## Manufacture
 Once the program was sufficiently tested on the development board ([Nucleo-F401RE](https://www.st.com/en/evaluation-tools/nucleo-f401re.html)) a full prototype board was assembled. 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-prototype.jpg" alt="Prototype board">
 
