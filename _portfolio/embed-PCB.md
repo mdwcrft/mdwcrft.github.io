@@ -5,9 +5,6 @@ collection: portfolio
 classes: wide
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p1-cover.PNG" alt="Some alt text">  
-
-
 ## Background
 
 This project was taken while working on the [Joint European Torus](https://en.wikipedia.org/wiki/Joint_European_Torus), the worlds largest nuclear fusion device. Creating [fusion power](https://en.wikipedia.org/wiki/Fusion_power) requires a huge amount of energy and most of this is supplied by [Neutral Beam Injectors](https://en.wikipedia.org/wiki/Neutral_beam_injection). Neutral beams are created by accelerating positive Hydrogen ions towards a neutralising gas. The neutral particles then continue their path into the plasma, adding energy by collision. To get the particles to high enough speeds they are accelerated towards a grid (Grid 1) which is supplied by a high voltage power supply (~130kV).  
