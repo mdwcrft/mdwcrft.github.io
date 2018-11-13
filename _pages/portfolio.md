@@ -15,7 +15,7 @@ feature_row1:
     title: "Optimizing Power Grids in Rwanda"
     excerpt: "A study on optimal grid architectures for Sub-Saharan communities"
     url: "/portfolio/optimizing-power-grids"
-  - image_path: /assets/images/p2-cover.png
+  - image_path: /assets/images/p3-cover.png
     title: "Analysis of a Permanent Magnet Synchronous Machine"
     alt: "Analysis of a Permanent Magnet Synchronous Machine"
     excerpt: "Using MATLAB and FEMM to analyze magnetic rotors"
