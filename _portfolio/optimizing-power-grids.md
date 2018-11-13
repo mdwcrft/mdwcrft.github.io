@@ -21,26 +21,26 @@ The geographic and social reasons for the state of Sub-Sahran Africa are vital t
 
 The aims and objectives are:  
 
-I. Serve village sized community with variable energy requirements
-  i. Supply at least 600 people
-  ii. Supply enough power for conventional white goods (Refrigerator, freezer, etc.) defined as 2kWh/day/household
-  iii. Supply both residential and commercial loads with realistic load profiles
-II. Achieve a low cost that is in line with regional income.
-  i. Net present cost (NPC) of less than $200,000 for whole system
-  ii. Levelised cost of energy (LCOE) of less than $0.3/kWh
-III. Achieve a stable supply with high efficiency and power quality
-  i. Load connection at 230V 50Hz AC
-  ii. Load factor of over 40%
-  iii. Unmet load of less than 10%
-IV. Analysis and selection of optimal storage solution
-  i. Literature review of low cost energy storage solutions
-  ii. Optimization of storage technology in HOMER to determine size
-V. Analysis and selection of optimal control and dispatch methods
-  i. Literature review of control methods
-  ii. Analyse qualities of grid for control selection
-  iii. Selection of low cost control method directly deployable within existing system structure
-VI. Minimal carbon dioxide emissions
-  i. Purely renewable energy sources
-  ii. Locally sourced materials where available
+1. Serve village sized community with variable energy requirements
+  - Supply at least 600 people
+  - Supply enough power for conventional white goods (Refrigerator, freezer, etc.) defined as 2kWh/day/household
+  - Supply both residential and commercial loads with realistic load profiles
+2. Achieve a low cost that is in line with regional income.
+  - Net present cost (NPC) of less than $200,000 for whole system
+  - Levelised cost of energy (LCOE) of less than $0.3/kWh
+3. Achieve a stable supply with high efficiency and power quality
+  - Load connection at 230V 50Hz AC
+  - Load factor of over 40%
+  - Unmet load of less than 10%
+4. Analysis and selection of optimal storage solution
+  - Literature review of low cost energy storage solutions
+  - Optimization of storage technology in HOMER to determine size
+5. Analysis and selection of optimal control and dispatch methods
+  - Literature review of control methods
+  - Analyse qualities of grid for control selection
+  - Selection of low cost control method directly deployable within existing system structure
+6. Minimal carbon dioxide emissions
+  - Purely renewable energy sources
+  - Locally sourced materials where available
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ViAzRYH8d6MTjHuasridF5F95Fo" width="640" height="480"></iframe>
