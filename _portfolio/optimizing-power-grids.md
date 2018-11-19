@@ -65,7 +65,7 @@ Three bands of energy consumption were estimated from figures for national consu
 |High|2|304|
   
 The load profile describes how the load varies through the day and is measured by the 'load factor'.
-$$f_L_o_a_d = AverageLoad / Maximum load$$
+$$fLoad = AverageLoad / Maximum load$$
 
 A load factor of 1 is very steady and does not require extra storage. Given consumption information, HOMER generates load profiles for residential and commercial properties. From that simulation, our load factors are:  
 
