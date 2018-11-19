@@ -115,7 +115,9 @@ Here we can see the high cost of Pulsed Hydro Energy Storage (PHES) and the rela
 
 This grid type has middling costs but some key inneficiencies, namely a high percentage of excess energy in the afternoons. The following graph shows the battery charge state for the low band on this grid over 1 year. Dark areas are where there is low charge and light is high, it is clear that the afternoon on most days sees the batteries at full charge and excess energy is wasted. There are also numerous days where the batteries see no charge on cloudy days for example.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-battery.png" alt="Solar low band battery state of charge"> 
+<figure style="width: 600px" class="align-left">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-battery.png" alt="Solar low band battery state of charge"> 
+</figure>
 
 ## Summary
 The microgrids created generally meet the requirements of objectives 1, 2, 3, & 6. 600 people can be served with 2kWh/day/household, however it is noted that serving this load from renewable energy sources requires a large initial capital investment. It was found that the microgrids are most suited to loads with consumption levels between 50 and 150kWh/day and that do not feature essential services. The net present cost (NPC) target of $200,000 was met for all levels of the hydro microgrid but only the low band solar grid meets the target. 
