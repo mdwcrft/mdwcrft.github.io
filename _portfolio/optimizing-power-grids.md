@@ -64,7 +64,8 @@ Three bands of energy consumption were estimated from figures for national consu
 |Medium|1|152|
 |High|2|304|
   
-The load profile describes how the load varies through the day and is measured by the 'load factor'.
+The load profile describes how the load varies through the day and is measured by the 'load factor'.  
+
 $$fLoad = AverageLoad / Maximum load$$
 
 A load factor of 1 is very steady and does not require extra storage. Given consumption information, HOMER generates load profiles for residential and commercial properties. From that simulation, our load factors are:  
@@ -79,7 +80,8 @@ These show highly variable loads which means we will require sufficient energy s
 ### Generation
 The most suitable generation methods identified for the region are Solar and Hydropower. Given geographic data inputs, HOMER can generate estimated monthly solar irradiation and river flow rates. Shown below, these profiles suggest that a combination of solar and hydro may serve the village well as the solar can top up the hydro in the dry months of June and August. 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-profile.png" alt="Yearly solar irradiation, Rubagabaga, Rwanda", caption="Yearly solar irradiation, Rubagabaga, Rwanda">  
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-profile.png" alt="Yearly solar irradiation, Rubagabaga, Rwanda">  
+  <figcaption>Yearly solar irradiation, Rubagabaga, Rwanda</figcaption>
 </figure> 
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-hydro-profile.png" alt="Yearly river flow rate, Rubagabaga, Rwanda"> 
