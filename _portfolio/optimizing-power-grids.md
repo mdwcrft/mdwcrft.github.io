@@ -67,7 +67,8 @@ Three bands of energy consumption were estimated from figures for national consu
 The load profile describes how the load varies through the day and is measured by the 'load factor'.
 $$f_L_o_a_d = AverageLoad / Maximum load$$
 
-A load factor of 1 is very steady and does not require extra storage. Given consumption information, HOMER generates load profiles for residential and commercial properties. From that simulation, our load factors are:
+A load factor of 1 is very steady and does not require extra storage. Given consumption information, HOMER generates load profiles for residential and commercial properties. From that simulation, our load factors are:  
+
 |Property|Load Factor|
 |---|---|
 |Residential|0.264| 
@@ -78,7 +79,8 @@ These show highly variable loads which means we will require sufficient energy s
 ### Generation
 The most suitable generation methods identified for the region are Solar and Hydropower. Given geographic data inputs, HOMER can generate estimated monthly solar irradiation and river flow rates. Shown below, these profiles suggest that a combination of solar and hydro may serve the village well as the solar can top up the hydro in the dry months of June and August. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-profile.png" alt="Yearly solar irradiation, Rubagabaga, Rwanda"> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-profile.png" alt="Yearly solar irradiation, Rubagabaga, Rwanda">  
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-hydro-profile.png" alt="Yearly river flow rate, Rubagabaga, Rwanda"> 
 
 ### Storage
@@ -89,6 +91,7 @@ A key aspect of a smart grid is an intelligent control system. Modern control al
 
 ## Results
 ### Hydro based microgrid
+
 |Band|Optimal storage|Net Present Cost ($)|Annualised cost per person ($/year)|
 |---|---|---|---|
 |Low|None|152,632|19.04|
@@ -101,13 +104,15 @@ Here we can see the high cost of Pulsed Hydro Energy Storage (PHES) and the rela
 
 
 ### Solar based microgrid
+
 |Band|Optimal storage|Net Present Cost ($)|Annualised cost per person ($/year)|
 |---|---|---|---|
 |Low|Li-Ion|201,945|25.11|
 |Medium|Li-Ion|283,131|35.20|
 |High|Li-Ion|452,058|56.21|
 
-This grid type has middling costs but some key inneficiencies, namely a high percentage of excess energy in the afternoons. The following graph shows the battery charge state for the low band on this grid over 1 year. Dark areas are where there is low charge and light is high, it is clear that the afternoon on most days sees the batteries at full charge and excess energy is wasted. There are also numerous days where the batteries see no charge on cloudy days for example. 
+This grid type has middling costs but some key inneficiencies, namely a high percentage of excess energy in the afternoons. The following graph shows the battery charge state for the low band on this grid over 1 year. Dark areas are where there is low charge and light is high, it is clear that the afternoon on most days sees the batteries at full charge and excess energy is wasted. There are also numerous days where the batteries see no charge on cloudy days for example.
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-battery.png" alt="Solar low band battery state of charge"> 
 
 ## Summary
