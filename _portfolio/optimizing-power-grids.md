@@ -92,11 +92,11 @@ A key aspect of a smart grid is an intelligent control system. Modern control al
 ## Results
 ### Hydro based microgrid
 
-|Band|Optimal storage|Net Present Cost ($)|Annualised cost per person ($/year)|
-|---|---|---|---|
-|Low|None|152,632|19.04|
-|Medium|Li-Ion|172,622|21.48|
-|High|PHES|1,581,945|196.70|
+|Band|Optimal storage|Net Present Cost ($)|Annualised cost per person ($/year)|Excess Energy(%)|Unmet Load (%)|
+|---|---|---|---|---|---|
+|Low|None|152,632|19.04|61.7|5.9|
+|Medium|Li-Ion|172,622|21.48|46|7.4|
+|High|PHES|1,581,945|196.70|11.9|8.6|
 
 Here we can see the high cost of Pulsed Hydro Energy Storage (PHES) and the relatively low ongoing costs associated with micro-hydro. The excess energy for this grid is extremely high for the low band which suggests hydro always over-produces, this may not be a problem if the capital cost is low enough. This grid still suffers from the problem of the dry season in Rwanda. The following graph shows the monthly hydro output overlaid with daily unmet load (in green), we can see that June, July, and August have significant periods of unmet load which could be highly disruptive to the community.
 
@@ -105,11 +105,11 @@ Here we can see the high cost of Pulsed Hydro Energy Storage (PHES) and the rela
 
 ### Solar based microgrid
 
-|Band|Optimal storage|Net Present Cost ($)|Annualised cost per person ($/year)|
-|---|---|---|---|
-|Low|Li-Ion|201,945|25.11|
-|Medium|Li-Ion|283,131|35.20|
-|High|Li-Ion|452,058|56.21|
+|Band|Optimal storage|Net Present Cost ($)|Annualised cost per person ($/year)|Excess Energy(%)|Unmet Load (%)|
+|---|---|---|---|---|---|
+|Low|Li-Ion|201,945|25.11|31.8|8.1|
+|Medium|Li-Ion|283,131|35.20|23.2|8.2|
+|High|Li-Ion|452,058|56.21|23.6|7.9|
 
 This grid type has middling costs but some key inneficiencies, namely a high percentage of excess energy in the afternoons. The following graph shows the battery charge state for the low band on this grid over 1 year. Dark areas are where there is low charge and light is high, it is clear that the afternoon on most days sees the batteries at full charge and excess energy is wasted. There are also numerous days where the batteries see no charge on cloudy days for example.
 
