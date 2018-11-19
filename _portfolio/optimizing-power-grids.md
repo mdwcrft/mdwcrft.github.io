@@ -48,7 +48,7 @@ The aims and objectives are:
 As part of the research for this project I assembled a list of known power generation sources in Rwanda and created a Google map displaying each and the major transmission lines connecting them. Each type of source has a different symbol, clicking on a source will show the type, the ownership, the output, grid connection, and completion date if it is under construction. The transmission lines are also distinguished by colour which can be seen by clicking a line.
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ViAzRYH8d6MTjHuasridF5F95Fo" width="800" height="480"></iframe>
 
-This map shows that Rwanda is already relatively advanced in terms of energy diversification. There are a number of Mega Watt level solar farms in the east, Peat power in the south, Gas, Biofuel, traditional thermal, many hydro plants, and even geothermal exploration in the north. Rwanda is blessed with hydropower potential due to the Nile and Congo river basins creating a flow of water north to south through the country. However the rainfall is highly variable so Rwanda cannot rely on hydropower alone.  
+This map shows that Rwanda is already relatively advanced in terms of energy diversification. There are a number of Mega Watt level solar farms in the east, peat power in the south, gas, biofuel, traditional thermal, many hydro plants, and even geothermal exploration in the north. Rwanda is blessed with hydropower potential due to the Nile and Congo river basins creating a flow of water north to south through the country. However the rainfall is highly variable so Rwanda cannot rely on hydropower alone.  
 Rwanda has a complicated political history and the economy remains based in agriculture with tea and coffee the largesty exports. Despite very real social and geographical hurdles, Rwanda currently has one of the fastest growing economies in the world and a relatively stable government. The costs of investment in the area remain high; connecting to the national grid costs a household $350 in Rwanda, whereas in Sudan it is $38 [source](https://openknowledge.worldbank.org/handle/10986/15871).  
 
 ## Simulation
@@ -65,7 +65,7 @@ Three bands of energy consumption were estimated from figures for national consu
 |High|2|304|
   
 The load profile describes how the load varies through the day and is measured by the 'load factor'.
-$$fLoad = Average_Load / Maximum load$$
+$$f_L_o_a_d = AverageLoad / Maximum load$$
 
 A load factor of 1 is very steady and does not require extra storage. Given consumption information, HOMER generates load profiles for residential and commercial properties. From that simulation, our load factors are:
 |Property|Load Factor|
