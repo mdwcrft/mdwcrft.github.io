@@ -78,10 +78,12 @@ These show highly variable loads which means we will require sufficient energy s
 
 ### Generation
 The most suitable generation methods identified for the region are Solar and Hydropower. Given geographic data inputs, HOMER can generate estimated monthly solar irradiation and river flow rates. Shown below, these profiles suggest that a combination of solar and hydro may serve the village well as the solar can top up the hydro in the dry months of June and August. 
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-profile.png" alt="Yearly solar irradiation, Rubagabaga, Rwanda">  
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-hydro-profile.png" alt="Yearly river flow rate, Rubagabaga, Rwanda"> 
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-solar-profile.png" alt="Yearly solar irradiation, Rubagabaga, Rwanda", caption="Yearly solar irradiation, Rubagabaga, Rwanda">  
+</figure> 
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p2-hydro-profile.png" alt="Yearly river flow rate, Rubagabaga, Rwanda"> 
+</figure> 
 
 ### Storage
 Various storage options are assessed at this stage. While there are many exciting new clean storage technologies, currently the cheapest and most practicle are still conventional batteries. A Lithium Ion battery and a Lead Acid battery are both chosen for comparison in HOMER as well as a pumped hydro storage option, with a much higher capital cost but longer lifetime. 
