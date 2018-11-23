@@ -8,19 +8,30 @@ feature_row1:
   - image_path: /assets/images/p1-cover.PNG
     alt: "Embedded Power Supply Control Card"
     title: "Embedded Power Supply Control Card"
-    excerpt: "Designing a PCB from Scratch with Proteus and ARM MBED"
+    excerpt: "Designing a PCB with Embedded MCU [Proteus, C++]"
     url: "/portfolio/embed-PCB"
   - image_path: /assets/images/p2-cover.png
     alt: "Optimizing Power Grids for rural Rwanda"
     title: "Optimizing Power Grids for rural Rwanda"
-    excerpt: "A study on optimal grid architectures for Sub-Saharan communities"
+    excerpt: "A study on optimal grid architectures for Sub-Saharan communities [HOMER]"
     url: "/portfolio/optimizing-power-grids"
   - image_path: /assets/images/p3-cover.png
     title: "Analysis of a Permanent Magnet Synchronous Machine"
     alt: "Analysis of a Permanent Magnet Synchronous Machine"
-    excerpt: "Using MATLAB and FEMM to analyze magnetic rotors"
+    excerpt: "Finite Element and Equivalent Circuit Analysis of Magnetic Rotors [FEMM, MATLAB]"
     url: "/portfolio/permanent-magnet-analysis"
 ---
+
+<!-- 
+feature_row2:
+  - image_path: /assets/images/p4-cover.png
+    alt: "Random Quote Generator"
+    title: "Random Quote Generator"
+    excerpt: "Website displaying quotes on request [HTML, CSS, Javascript]"
+    url: "/portfolio/random-quote-generator"
+    
+   -->
+
 
 <!-- {% include feature_row id="feature_row3" %} -->
 
