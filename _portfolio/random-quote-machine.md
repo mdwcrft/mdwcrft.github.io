@@ -1,6 +1,6 @@
 ---
-title: "Random Quote Generator"
-excerpt: "Random Quote Generator"
+title: "Random Quote Machine"
+excerpt: "Random Quote Machine"
 collection: portfolio
 author_profile: false
 classes: wide

@@ -23,8 +23,8 @@ feature_row1:
 
 feature_row2:
   - image_path: /assets/images/p4-cover.png
-    alt: "Random Quote Generator"
-    title: "Random Quote Generator"
+    alt: "Random Quote Machine"
+    title: "Random Quote Machine"
     excerpt: "Website displaying quotes on request [HTML, CSS, Javascript]"
     url: "/portfolio/random-quote-generator"
 ---
