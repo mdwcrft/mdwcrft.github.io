@@ -56,5 +56,21 @@ It has been determined from the equivalent circuit simulations that power and nu
 </figure> 
 
 ## Finite Element Method
+The finite element method was applied via the FEMM program, called from MATLAB and applied to the inner and outer rotors seperately.  
+
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-power.jpg" alt="Outer rotor machine power contour for width and diameter from FEM">  
+  <figcaption>Figure 5: Outer rotor machine power contour for width and diameter from FEM</figcaption>
+</figure> 
+
+Figure 5 shows one of the output diagrams and shows significant variation from the equivalent circuit diagrams. We conclude that this variation is due to the FEM being purely 2D and not accounting for losses in the third dimensions which would grow proportionally larger with a lower diameter.  
+
+The next stage is to compare the inner and outer rotor topologies for temperature distribution and flux density. 
+
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-inner-flux.jpg" alt="Inner machine rotor flux density">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-flux.jpg" alt="Outer machine rotor flux density">   
+  <figcaption>Figure 6: Comparison of flux density for inner and outer rotor configurations</figcaption>
+</figure> 
 
 ## Conclusion
