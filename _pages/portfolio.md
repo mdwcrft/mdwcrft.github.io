@@ -26,7 +26,7 @@ feature_row2:
     alt: "Random Quote Machine"
     title: "Random Quote Machine"
     excerpt: "Website displaying quotes on request [HTML, CSS, Javascript]"
-    url: "/portfolio/random-quote-generator"
+    url: "/portfolio/random-quote-machine"
 ---
 
 
