@@ -67,11 +67,15 @@ Figure 5 shows one of the output diagrams and shows significant variation from t
 
 The next stage is to compare the inner and outer rotor topologies for temperature distribution and flux density. 
 
-<figure>
+<figure style="width: 600px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-inner-flux.jpg" alt="Inner machine rotor flux density">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-flux.jpg" alt="Outer machine rotor flux density">   
-  <figcaption>Figure 6: Comparison of flux density for inner and outer rotor configurations</figcaption>
+  <figcaption>Figure 6: Inner machine rotor flux density</figcaption>
 </figure> 
+
+<figure style="width: 600px" class="align-right">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-flux.jpg" alt="Outer machine rotor flux density">
+    <figcaption>Figure 7: Outer machine rotor flux density</figcaption>
+</figure>
 
 The inner rotor seems to display a better spread of flux density compared to the outer. For the heat distribution it is the opposite so the differences in design choice may not be very different. The harmonics are also analysed and judged to be satisfactory. 
 
