@@ -67,12 +67,12 @@ Figure 5 shows one of the output diagrams and shows significant variation from t
 
 The next stage is to compare the inner and outer rotor topologies for temperature distribution and flux density. 
 
-<figure style="width: 600px" class="align-left">
+<figure style="width: 400px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-inner-flux.jpg" alt="Inner machine rotor flux density">
   <figcaption>Figure 6: Inner machine rotor flux density</figcaption>
 </figure> 
 
-<figure style="width: 600px" class="align-right">
+<figure style="width: 400px" class="align-right">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-flux.jpg" alt="Outer machine rotor flux density">
     <figcaption>Figure 7: Outer machine rotor flux density</figcaption>
 </figure>
