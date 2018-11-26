@@ -73,4 +73,6 @@ The next stage is to compare the inner and outer rotor topologies for temperatur
   <figcaption>Figure 6: Comparison of flux density for inner and outer rotor configurations</figcaption>
 </figure> 
 
+The inner rotor seems to display a better spread of flux density compared to the outer. For the heat distribution it is the opposite so the differences in design choice may not be very different. The harmonics are also analysed and judged to be satisfactory. 
+
 ## Conclusion
