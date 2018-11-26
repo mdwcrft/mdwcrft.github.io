@@ -19,8 +19,8 @@ Our aims for the project were to design a magnetic machine that would deliver en
 ## Initial Calculation
 The first stage is to lay out some fundamental assumptions about the application of the machine. In this case it was to be used within a bicycle wheel; this imposes restrictions on size and weight. We also assumed a rider weight of 80Kg and bicycle weight of 20Kg with 0mph wind speed. We show that the required power and torque are dependent on the various forms of resistance.
 
-$$ P = ((Fdrag + Froll + Fgrav) * v) / 0.8 $$
-$$ T = P/w $$
+$$P = ((Fdrag + Froll + Fgrav) * v) / 0.8$$
+$$T = P/w$$
 
 Input into MATLAB while varying inlination and speed gives the output shown by figure 1. 
 
