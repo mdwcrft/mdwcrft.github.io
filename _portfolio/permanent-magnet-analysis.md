@@ -86,7 +86,7 @@ The results from all the simulations are processed and digested to inform the de
 |---|---|---|---|---|---|
 |80mm|120mm|6|0.8mm|Outer|3.5kg|  
 
-<figure style="width: 400px" class="align-right">
+<figure>
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-final-geom.jpg" alt="Final machine geometry">
     <figcaption>Figure 8: Final machine geometry</figcaption>
 </figure>
