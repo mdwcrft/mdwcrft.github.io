@@ -26,12 +26,12 @@ $$Torque = P/w$$
 
 Input into MATLAB while varying inlination and speed gives the output shown by figure 1. 
 
-<figure>
+<figure style="width: 450px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-torque-requirement.jpg" alt="Bicycle speed dependence on inclination angle and torque">  
   <figcaption>Figure 1: Bicycle speed dependence on inclination angle and torque</figcaption>
 </figure> 
 
-<figure>
+<figure style="width: 450px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-power-requirement.jpg" alt="Bicycle speed dependence on inclination angle and power">  
   <figcaption>Figure 2: Bicycle speed dependence on inclination angle and power</figcaption>
 </figure> 
