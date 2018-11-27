@@ -77,6 +77,16 @@ The next stage is to compare the inner and outer rotor topologies for temperatur
     <figcaption>Figure 7: Outer machine rotor flux density</figcaption>
 </figure>
 
-The inner rotor seems to display a better spread of flux density compared to the outer. For the heat distribution it is the opposite so the differences in design choice may not be very different. The harmonics are also analysed and judged to be satisfactory. 
+The inner rotor seems to display a better spread of flux density compared to the outer. For the heat distribution it is the opposite so the differences in design choice may not be very different. The harmonics are also analysed and judged to be satisfactory.  
 
 ## Conclusion
+The results from all the simulations are processed and digested to inform the decision of the final design parameters. The final design drawing is shown in figure 8.  
+
+|Width|Diameter|Poles|Air Gap|Rotor Position|Weight|
+|---|---|---|---|---|---|
+|80mm|120mm|6|0.8mm|Outer|3.5kg|  
+
+<figure style="width: 400px" class="align-right">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-final-geom.jpg" alt="Final machine geometry">
+    <figcaption>Figure 8: Final machine geometry</figcaption>
+</figure>
