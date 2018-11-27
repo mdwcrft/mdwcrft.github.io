@@ -53,12 +53,12 @@ The equivalent circuit method is much less accurate than finite element but it h
 
 After more equivalent circuit simulations it can be shown that the effect of the number of magnetic poles on the output power is *much* greater than size or magnetic air gap. Figure 3 shows the result of varying air gap and number of poles on output power for a 90mm by 80mm machine.  
 
-<figure style="width: 450px" class="align-right">
+<figure style="width: 450px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-poles-power.jpg" alt="Machine power contour for poles and air gap">  
   <figcaption>Figure 4: Machine power contour for poles and air gap</figcaption>
 </figure> 
 
-<figure style="width: 450px" class="align-left">
+<figure style="width: 450px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-poles-efficiency.jpg" alt="Output efficiency for poles and air gap">  
   <figcaption>Figure 5: Output efficiency for poles and air gap</figcaption>
 </figure> 
