@@ -31,28 +31,43 @@ Input into MATLAB while varying inlination and speed gives the output shown by f
   <figcaption>Figure 1: Bicycle speed dependence on inclination angle and torque</figcaption>
 </figure> 
 
-## Equivalent Circuit
-The output of the initial simulations is fed back into MATLAB using the equivalent circuit method to find the required machine sizes for different torque outputs. The output of these secondary simulations is shown in Figure 2.
-
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-size-requirement.jpg" alt="Machine torque contour for width and diameter">  
-  <figcaption>Figure 2: Machine torque contour for width and diameter</figcaption>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-power-requirement.jpg" alt="Bicycle speed dependence on inclination angle and power">  
+  <figcaption>Figure 2: Bicycle speed dependence on inclination angle and power</figcaption>
+</figure> 
+
+## Equivalent Circuit
+The output of the initial simulations is fed back into MATLAB using the equivalent circuit method to find the required machine sizes for different torque outputs. The output of these secondary simulations is shown in Figures 2 & 3.
+
+<figure style="width: 450px" class="align-left">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-size-power.jpg" alt="Power contour for width and diameter">  
+  <figcaption>Figure 2: Power contour for width and diameter</figcaption>
+</figure> 
+
+<figure style="width: 450px" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-size-efficiency.jpg" alt="Output efficiency for width and diameter">  
+  <figcaption>Figure 3: Output efficiency for width and diameter</figcaption>
 </figure> 
 
 The equivalent circuit method is much less accurate than finite element but it helped us narrow down the choices for machine size. Our aim for power output is 250W, therefore it was judged to use a diameter of 90mm, width of 80mm going forward.  
 
 After more equivalent circuit simulations it can be shown that the effect of the number of magnetic poles on the output power is *much* greater than size or magnetic air gap. Figure 3 shows the result of varying air gap and number of poles on output power for a 90mm by 80mm machine.  
 
-<figure>
+<figure style="width: 450px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-poles-power.jpg" alt="Machine power contour for poles and air gap">  
-  <figcaption>Figure 3: Machine power contour for poles and air gap</figcaption>
+  <figcaption>Figure 4: Machine power contour for poles and air gap</figcaption>
 </figure> 
 
-It has been determined from the equivalent circuit simulations that power and number of poles are the most important factors as a gear can be used to adjust our torque if there is enough power. A new script is run to determine the optimal size for a 200W, 6 pole machine with a planetary gear. The output is shown in Figure 4, it has a diameter of 75mm and width of 47.5mm.
+<figure style="width: 450px" class="align-left">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-poles-efficiency.jpg" alt="Output efficiency for poles and air gap">  
+  <figcaption>Figure 5: Output efficiency for poles and air gap</figcaption>
+</figure> 
+
+It has been determined from the equivalent circuit simulations that power and number of poles are the most important factors as a gear can be used to adjust our torque if there is enough power. A new script is run to determine the optimal size for a 200W, 6 pole machine with a planetary gear. The output is shown in Figure 6, it has a diameter of 75mm and width of 47.5mm.
 
 <figure>
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-ecm-output.jpg" alt="Equivalent circuit optimal machine with planetary gear">  
-  <figcaption>Figure 4: Equivalent circuit optimal machine with planetary gear</figcaption>
+  <figcaption>Figure 6: Equivalent circuit optimal machine with planetary gear</figcaption>
 </figure> 
 
 ## Finite Element Method
@@ -60,12 +75,12 @@ The finite element method was applied via the FEMM program, called from MATLAB a
 
 <figure style="width: 450px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-loss.jpg" alt="Outer rotor machine heat loss contour for width and diameter">  
-  <figcaption>Figure 5: Outer rotor machine heat loss contour for width and diameter</figcaption>
+  <figcaption>Figure 7: Outer rotor machine heat loss contour for width and diameter</figcaption>
 </figure> 
 
 <figure style="width: 450px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-power.jpg" alt="Outer rotor machine power contour for width and diameter">  
-  <figcaption>Figure 6: Outer rotor machine power contour for width and diameter</figcaption>
+  <figcaption>Figure 8: Outer rotor machine power contour for width and diameter</figcaption>
 </figure> 
 
 Figure 6 shows one of the output diagrams and shows significant variation from the equivalent circuit diagrams. We conclude that this variation is due to the FEM being purely 2D and not accounting for losses in the third dimensions which would grow proportionally larger with a lower diameter.  
@@ -74,18 +89,18 @@ The next stage is to compare the inner and outer rotor topologies for temperatur
 
 <figure style="width: 450px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-inner-flux.jpg" alt="Inner machine rotor flux density">
-  <figcaption>Figure 7: Inner machine rotor flux density</figcaption>
+  <figcaption>Figure 9: Inner machine rotor flux density</figcaption>
 </figure> 
 
 <figure style="width: 450px" class="align-right">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-flux.jpg" alt="Outer machine rotor flux density">
-    <figcaption>Figure 8: Outer machine rotor flux density</figcaption>
+    <figcaption>Figure 10: Outer machine rotor flux density</figcaption>
 </figure>
 
 The inner rotor seems to display a better spread of flux density compared to the outer. For the heat distribution it is the opposite so the differences in design choice may not be very different. The harmonics are also analysed and judged to be satisfactory.  
 
 ## Conclusion
-The results from all the simulations are processed and digested to inform the decision of the final design parameters. The final design drawing is shown in figure 9.  
+The results from all the simulations are processed and digested to inform the decision of the final design parameters. The final design drawing is shown in figure 11.  
 
 |Width|Diameter|Poles|Air Gap|Rotor Position|Weight|
 |---|---|---|---|---|---|
@@ -93,5 +108,5 @@ The results from all the simulations are processed and digested to inform the de
 
 <figure>
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-final-geom.jpg" alt="Final machine geometry">
-    <figcaption>Figure 9: Final machine geometry</figcaption>
+    <figcaption>Figure 11: Final machine geometry</figcaption>
 </figure>
