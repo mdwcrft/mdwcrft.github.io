@@ -58,29 +58,34 @@ It has been determined from the equivalent circuit simulations that power and nu
 ## Finite Element Method
 The finite element method was applied via the FEMM program, called from MATLAB and applied to the inner and outer rotors seperately.  
 
-<figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-power.jpg" alt="Outer rotor machine power contour for width and diameter from FEM">  
-  <figcaption>Figure 5: Outer rotor machine power contour for width and diameter from FEM</figcaption>
+<figure style="width: 450px" class="align-left">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-loss.jpg" alt="Outer rotor machine heat loss contour for width and diameter">  
+  <figcaption>Figure 5: Outer rotor machine heat loss contour for width and diameter</figcaption>
 </figure> 
 
-Figure 5 shows one of the output diagrams and shows significant variation from the equivalent circuit diagrams. We conclude that this variation is due to the FEM being purely 2D and not accounting for losses in the third dimensions which would grow proportionally larger with a lower diameter.  
+<figure style="width: 450px" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-power.jpg" alt="Outer rotor machine power contour for width and diameter">  
+  <figcaption>Figure 6: Outer rotor machine power contour for width and diameter</figcaption>
+</figure> 
+
+Figure 6 shows one of the output diagrams and shows significant variation from the equivalent circuit diagrams. We conclude that this variation is due to the FEM being purely 2D and not accounting for losses in the third dimensions which would grow proportionally larger with a lower diameter.  
 
 The next stage is to compare the inner and outer rotor topologies for temperature distribution and flux density. 
 
 <figure style="width: 450px" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-inner-flux.jpg" alt="Inner machine rotor flux density">
-  <figcaption>Figure 6: Inner machine rotor flux density</figcaption>
+  <figcaption>Figure 7: Inner machine rotor flux density</figcaption>
 </figure> 
 
 <figure style="width: 450px" class="align-right">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-outer-flux.jpg" alt="Outer machine rotor flux density">
-    <figcaption>Figure 7: Outer machine rotor flux density</figcaption>
+    <figcaption>Figure 8: Outer machine rotor flux density</figcaption>
 </figure>
 
 The inner rotor seems to display a better spread of flux density compared to the outer. For the heat distribution it is the opposite so the differences in design choice may not be very different. The harmonics are also analysed and judged to be satisfactory.  
 
 ## Conclusion
-The results from all the simulations are processed and digested to inform the decision of the final design parameters. The final design drawing is shown in figure 8.  
+The results from all the simulations are processed and digested to inform the decision of the final design parameters. The final design drawing is shown in figure 9.  
 
 |Width|Diameter|Poles|Air Gap|Rotor Position|Weight|
 |---|---|---|---|---|---|
@@ -88,5 +93,5 @@ The results from all the simulations are processed and digested to inform the de
 
 <figure>
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p3-final-geom.jpg" alt="Final machine geometry">
-    <figcaption>Figure 8: Final machine geometry</figcaption>
+    <figcaption>Figure 9: Final machine geometry</figcaption>
 </figure>
