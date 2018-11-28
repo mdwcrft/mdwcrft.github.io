@@ -17,4 +17,4 @@ Notice anything wrong? The text says "in which the *footer* and *header* areas o
 
 This is my first real pull request on Github! Now we wait for merging...
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-pull=status.PNG" alt="Pull request status">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-pull-status.PNG" alt="Pull request status">
