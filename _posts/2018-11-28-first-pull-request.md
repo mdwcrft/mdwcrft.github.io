@@ -2,7 +2,7 @@
 title: "My first pull request"
 date: 2018-11-05
 tags: []
-excerpt: ":file_folder:"
+excerpt: ":arrows_clockwise:"
 classes: wide
 mathjax: true
 ---
