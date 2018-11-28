@@ -11,7 +11,9 @@ As I was working through [FreeCodeCamp](https://learn.freecodecamp.org/) this mo
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-test-text.PNG" alt="FreeCodeCamp error message">
 
-Notice anything wrong? The text says "in which the *footer* and *header* areas occupy the *top* and *bottom* rows **respectively**. This is wrong as the header should be at the top so I found the file on [Github](https://github.com/freeCodeCamp/freeCodeCamp) and suggested swapping the references to header and footer:  
+Notice anything wrong? The text says "in which the *footer* and *header* areas occupy the *top* and *bottom* rows **respectively**. This is wrong as the header should be at the top.  
+
+I found the file on [Github](https://github.com/freeCodeCamp/freeCodeCamp) and suggested swapping the references to header and footer:  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-code-change.PNG" alt="Edited github code">
 
