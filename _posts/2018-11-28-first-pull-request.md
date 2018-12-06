@@ -17,6 +17,12 @@ I found the file on [Github](https://github.com/freeCodeCamp/freeCodeCamp) and s
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-code-change.PNG" alt="Edited github code">
 
-This is my first real pull request on Github! Now we wait for merging...
+This is my first real pull request on Github! Now we wait for the bot to do checks:  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-pull-status.PNG" alt="Pull request status">
+
+*update:* The checks have passed:  
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-checks-passed.PNG" alt="Pull request status">
+
+The next stage is for manual merging by an admin.
