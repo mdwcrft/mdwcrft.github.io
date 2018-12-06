@@ -21,7 +21,7 @@ This is my first real pull request on Github! Now we wait for the bot to do chec
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-pull-status.PNG" alt="Pull request status">
 
-*update:* The checks have passed:  
+*Update #1:* The checks have passed:  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/3-checks-passed.PNG" alt="Pull request status">
 
