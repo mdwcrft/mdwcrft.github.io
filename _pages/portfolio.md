@@ -27,6 +27,11 @@ feature_row2:
     title: "Random Quote Machine"
     excerpt: "Website displaying quotes on request [HTML, CSS, Javascript]"
     url: "/portfolio/random-quote-machine"
+  - image_path: /assets/images/p5-cover.png
+    alt: "Capital One Business Decision Making"
+    title: "Capital One Business Decision Making"
+    excerpt: "Analysing a business model for balance transfer credit cards"
+    url: "/portfolio/capital-one-business-decisions"
 ---
 
 
