@@ -30,3 +30,4 @@ We were given an excel model showing the key figures for the Capital One BT card
 Using these figures and some other model inputs we are to make a recommendation to Capital One senior management with the ultimate goal of increasing market share and total profit.
 
 ## Recommendation
+<embed src="{{ site.url }}{{ site.baseurl }}/assets/images/capone_memo.pdf" type="application/pdf" width="100%" />
