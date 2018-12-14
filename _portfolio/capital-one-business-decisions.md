@@ -25,4 +25,8 @@ We were given an excel model showing the key figures for the Capital One BT card
 |Average BT fee size|£2,033|£3,875|£3,217|£2,792|£2,485|£1,375|
 |% Gamers|15%|50%|40%|30%|20%|10%|
 |PV per customer|£94.36|£95.49|£134.12|£121.51|£138.12|£97.58|
-|Total PV (Profit)|£23.6m|£238.7m|£134.1m|£60.8m|£69.1m|£24.4m|
+|Total PV (Profit)|£23.6m|£238.7m|£134.1m|£60.8m|£69.1m|£24.4m|  
+
+Using these figures and some other model inputs we are to make a recommendation to Capital One senior management with the ultimate goal of increasing market share and total profit.
+
+## Recommendation
