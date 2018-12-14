@@ -16,7 +16,7 @@ Capital One is an American financial corporation with an office in Nottingham sp
 We were given an excel model showing the key figures for the Capital One BT card and those of their competitors which I refer to as Comp A-E.  
 
 |   |Capital One|Comp A|Comp B|Comp C|Comp D|Comp E|
-------------------------
+|---|---|---|---|---|---|---|---|
 |Teaser Length (months)|9|12|11|10|10|8|
 |BT in fee|1.1%|1.5%|1.4%|1.2%|1.3%|1.0%|
 |Post-Teaser APR|17%|20.9%|22.9%|19.9%|20.9%|19.9%|
