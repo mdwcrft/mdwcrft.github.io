@@ -32,6 +32,11 @@ feature_row2:
     title: "Capital One Business Decisions"
     excerpt: "Analysing a business model for balance transfer credit cards"
     url: "/portfolio/capital-one-business-decisions"
+  - image_path: /assets/images/p6-cover.png
+    alt: ""
+    title: ""
+    excerpt: ""
+    url: "/portfolio/"
 ---
 
 
