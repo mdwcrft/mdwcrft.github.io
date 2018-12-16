@@ -8,7 +8,7 @@ feature_row1:
   - image_path: /assets/images/p1-cover.PNG
     alt: "Embedded Power Supply Control Card"
     title: "Embedded Power Supply Control Card"
-    excerpt: "Designing a PCB with Embedded MCU [Proteus, C++]"
+    excerpt: "Designing a PCB with Embedded MCU [Proteus, ARM MBED, C++]"
     url: "/portfolio/embed-PCB"
   - image_path: /assets/images/p2-cover.png
     alt: "Optimizing Power Grids for rural Rwanda"
@@ -33,9 +33,9 @@ feature_row2:
     excerpt: "Analysing a business model for balance transfer credit cards"
     url: "/portfolio/capital-one-business-decisions"
   - image_path: /assets/images/p6-cover.png
-    alt: ""
-    title: ""
-    excerpt: ""
+    alt: "Excel modelling for GTF 2015"
+    title: "Excel modelling for GTF 2015"
+    excerpt: "Developing an electrification model for World Bank investments [Excel]"
     url: "/portfolio/"
 ---
 
