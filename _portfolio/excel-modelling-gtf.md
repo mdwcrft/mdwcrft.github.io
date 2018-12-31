@@ -7,7 +7,7 @@ classes: wide
 mathjax: true
 ---
 
-During the summer after Graduation I did some freelance excel formatting work which contributed to a project run by [Sustainable Energy for All](https://www.seforall.org/), a spin-off of the World Bank and the UN. The model was used to predict the cost of full electricity coverage for the whole world by country. The results are documented and used in [The Global Tracking Framework 2015](https://www.seforall.org/sites/default/files/GTF-2105-Full-Report.pdf)/[Key Findings](https://trackingsdg7.esmap.org/data/files/download-documents/gtf-2015-key-findings.pdf)/[(Summary)](http://www.worldbank.org/content/dam/Worldbank/document/Energy/se4all/SE4ALL-Energy-Access-Committee-Report-Corrigendum.pdf). 
+During the summer after Graduation I did some freelance excel formatting work which contributed to a project run by [Sustainable Energy for All](https://www.seforall.org/), a spin-off of the World Bank and the UN. The model was used to predict the cost of full electricity coverage for the whole world by country. The results are documented and used in [The Global Tracking Framework 2015](https://www.seforall.org/sites/default/files/GTF-2105-Full-Report.pdf)/[Key Findings](https://trackingsdg7.esmap.org/data/files/download-documents/gtf-2015-key-findings.pdf)/[Summary](http://www.worldbank.org/content/dam/Worldbank/document/Energy/se4all/SE4ALL-Energy-Access-Committee-Report-Corrigendum.pdf). 
 
 <figure style="width: 300px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p6-goal7.png" alt="UN SDG#7">
