@@ -36,7 +36,7 @@ feature_row2:
     alt: "Excel modelling for GTF 2015"
     title: "Excel modelling for GTF 2015"
     excerpt: "Developing an electrification model for World Bank investments [Excel]"
-    url: "/portfolio/"
+    url: "/portfolio/excel-modelling-gtf"
 ---
 
 
