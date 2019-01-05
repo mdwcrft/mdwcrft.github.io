@@ -17,6 +17,8 @@ The idea for our project came from the [Theremin](http://www.channelroadamps.com
 ### Relaxation Oscillator
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/p7-oscillator-sch.PNG" alt="Relaxation Oscillator Schematic">  
 
+The schematic above is our equivalent relaxation oscillator built in LTSpice for simulation. The power supply is pulsed every 50ms to simulate a finger touch. $$C1$$ is the capacitance of the finger or body which may be touching the circuit. Every 50ms $$C1$$ and $$R4$$ are engaged into the circuit which combine with $$Cprox$$ and $$R1-R3$$. LT1013 is a simple operational Amplifier that supplied by 5V which allows us to operate it as an XOR gate which is dependent on C1.
+
 ### FM Demodulator
 
 
