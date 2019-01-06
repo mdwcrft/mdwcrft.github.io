@@ -42,7 +42,7 @@ feature_row3:
   - image_path: /assets/images/p7-cover.png
     alt: "Capacitive Sensing Cans"
     title: "Capacitive Sensing Cans"
-    excerpt: "Sensing hand movements with aluminium cans [Analog electronics]"
+    excerpt: "Sensing hand movements with aluminium cans [LTSpice, Analog electronics]"
     url: "/portfolio/cap-sensing-can"
 ---
 
