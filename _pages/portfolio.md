@@ -37,10 +37,17 @@ feature_row2:
     title: "Excel modelling for GTF 2015"
     excerpt: "Developing an electrification model for World Bank investments [Excel]"
     url: "/portfolio/excel-modelling-gtf"
+
+feature_row3:
+  - image_path: /assets/images/p7-cover.png
+    alt: "Capacitive Sensing Cans"
+    title: "Capacitive Sensing Cans"
+    excerpt: "Sensing hand movements with aluminium cans [Analog electronics]"
+    url: "/portfolio/cap-sensing-can"
 ---
 
 
-<!-- {% include feature_row id="feature_row3" %} -->
+{% include feature_row id="feature_row3" %}
 
 {% include feature_row id="feature_row2" %}
 
