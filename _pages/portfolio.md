@@ -44,6 +44,11 @@ feature_row3:
     title: "Capacitive Sensing Cans"
     excerpt: "Sensing hand movements with aluminium cans [LTSpice, Analog electronics]"
     url: "/portfolio/cap-sensing-can"
+  - image_path: /assets/images/p8-cover.png
+    alt: "VLSI Chip Design"
+    title: "VLSI Chip Design"
+    excerpt: "Designing CMOS gates for a VLSI chip [MATLAB, WinLASI]"
+    url: "/portfolio/vlsi-design"
 ---
 
 
