@@ -51,9 +51,8 @@ feature_row3:
 #    url: "/portfolio/vlsi-design" 
 ---
 
+{% include feature_row id="feature_row1" %}
 
 {% include feature_row id="feature_row3" %}
 
 {% include feature_row id="feature_row2" %}
-
-{% include feature_row id="feature_row1" %}
