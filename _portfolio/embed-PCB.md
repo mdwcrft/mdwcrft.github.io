@@ -87,6 +87,4 @@ Proteus can also make a 3D visual to show how the final component will look.
 
 The final stage of the process is generating a Bill of Materials (BOM) that specifies the components to be used on the final PCB. This involves searching component sites ([RS](https://uk.rs-online.com/web/), [Mouser](https://www.mouser.co.uk/), [Farnell](https://uk.farnell.com/)), reading datasheets, and sometimes testing components in a lab. For example I tested the current consumption of the LED, Fibre Transmitter, and MOSFET in series to ensure the correct resistor value to use above them.  
 
-Proteus is used again to generate [Gerber files](https://en.wikipedia.org/wiki/Gerber_format) which are sent, along with the BOM, to a manufacturer. 
-
-My board has not yet been manufactured but I will update this post with a picture and an example operation gif when it is.
+Proteus is used again to generate [Gerber files](https://en.wikipedia.org/wiki/Gerber_format) which are sent, along with the BOM, to a manufacturer.
