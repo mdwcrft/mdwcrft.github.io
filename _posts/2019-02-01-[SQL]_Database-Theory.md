@@ -1,5 +1,5 @@
 ---
-title: "SQL #1: Database Theory"
+title: "SQL #1"
 date: 2019-02-01
 tags: []
 excerpt: ":wrench:"
