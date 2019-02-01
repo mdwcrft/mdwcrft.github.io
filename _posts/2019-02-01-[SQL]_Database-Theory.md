@@ -95,3 +95,5 @@ The **default tables** included in an SQL server are;
 - `tempdb`: Stores temporary tables, shared by all users  
 
 **Keys** are unique identifiers for users or instances of an entity. There could be multiple *candidate keys* from which one *primary key* is chosen. Keys can also either be readable *business keys* or indexed *surrogate keys*. The choice of key is mostly up to the user.
+
+**Collation** defines the encoding of the SQL language type. For example CI_AS is english, case insensitive & accent sensitive. The user should be aware of the exact collation of the language flavour *before* setting up an SQL server.
