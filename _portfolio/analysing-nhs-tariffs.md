@@ -230,4 +230,4 @@ A stored procedure of this format was made for the 2017-18 tariffs and for the 2
 # Part 2: Visualise Tariff Changes
 The second part of the project was to visualise tariff changes by diagnoses, chapter, and patient type. I chose a simple approach where the user can select diagnoses chapter and patient type to see the average change in costs, change in costs by diagnoses, and patient density by UK county.  
 
-<iframe seamless frameborder="0" src="https://public.tableau.com/shared/PR5KGZDXB?:display_count=yes" width = '650' height = '450' scrolling='yes' ></iframe>    
+<iframe seamless frameborder="0" src="https://public.tableau.com/views/NHSTariffs/Dashboard?:embed=y&:display_count=yes" width = '650' height = '450' scrolling='yes' ></iframe>    
