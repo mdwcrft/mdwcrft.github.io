@@ -5,8 +5,17 @@ tags: []
 excerpt: "Series, DataFrames, Methods, & Functions"
 ---
 
+This is the fourth in a series of Python notes I made during the [Kubrick](https://kubrickgroup.com/) Data Engineering training course.    
+[#1: Basics]({{ site.url }}{{ site.baseurl }}/python-basics)  
+[#2: Advanced]({{ site.url }}{{ site.baseurl }}/python-advanced)  
+[#3: Scraping]({{ site.url }}{{ site.baseurl }}/python-scraping)  
+[#4: Pandas]({{ site.url }}{{ site.baseurl }}/python-pandas)  
+[#5: Matplotlib]({{ site.url }}{{ site.baseurl }}/python-matplotlib)  
+
+---
 [Pandas](https://pandas.pydata.org/) is an open source Python library for data handling and analysis derived from [numpy](http://www.numpy.org/). It allows for flexible table manipulation among many other features.  
 
+---
 # Series
 Pandas series are 1-dimensional arrays of indexed data of a single data type.  
 
@@ -38,7 +47,7 @@ pd.Index([datetime(2019,1,1), datetime(2019,1,2)])
 
 ```
 
-
+---
 # DataFrames
 DataFrames are 2-dimensional arrays indexed by columns and rows where each column references a Series object. A DataFrame can be defined relatively easily from many other types of tabular data objects.  
 
@@ -52,6 +61,7 @@ DataFrames are 2-dimensional arrays indexed by columns and rows where each colum
 
 Basic information about a DataFrame or Series can be returned using `df.index`, `df.columns`, `df.values`, & `df.shape`.  
 
+---
 # Indexing
 
 ### .loc
@@ -89,6 +99,7 @@ mask = s.isin([1,4]) # Mask using .isin with a list
 s[mask] # Apply to series or DataFrame
 ```
 
+---
 # Manipulating data
 
 ### Missing Data
@@ -122,6 +133,7 @@ df.sort_index()  # Index sort
 df.sort_values(['a', 'b'], ascending=[True, False])  # Sort on col a ascending then col b descending
 ```
 
+---
 # Operations
 
 ### Universal Functions
@@ -169,7 +181,7 @@ df.groupby('key')['value1'].sum() # Sum groups only for 'value1' column
 df.groupby('key').agg(['sum', 'mean']) # Creates columns for each aggregation under each existing column
 df.groupby('key').agg({'value1':np.sum, 'value2':np.min}) # Apply sum to value1 col and min to value2 column
 df.groupby('key').filter(lambda x: max(x['value1']) > 5)  # Gives the whole group if that group contains a max value > 5
-pd.concat([df, df.groupby('key').transform('mean')], axis=1) # Diplays the mean for the group in all group values (like an SQL window function)
+pd.concat([df, df.groupby('key').transform('mean')], axis=1) # Displays the mean for the group in all group values (like an SQL window function)
 ```
 
 Pandas also supports **pivot tables** which work like `.groupby` but on 2 or more dimensions. 

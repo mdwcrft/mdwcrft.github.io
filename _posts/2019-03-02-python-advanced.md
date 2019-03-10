@@ -5,7 +5,14 @@ tags: []
 excerpt: "Decorators, generators, I/O, RegEx, Modules"
 ---
 
+This is the second in a series of Python notes I made during the [Kubrick](https://kubrickgroup.com/) Data Engineering training course.    
+[#1: Basics]({{ site.url }}{{ site.baseurl }}/python-basics)  
+[#2: Advanced]({{ site.url }}{{ site.baseurl }}/python-advanced)  
+[#3: Scraping]({{ site.url }}{{ site.baseurl }}/python-scraping)  
+[#4: Pandas]({{ site.url }}{{ site.baseurl }}/python-pandas)  
+[#5: Matplotlib]({{ site.url }}{{ site.baseurl }}/python-matplotlib)  
 
+---
 # Advanced Functions
 - Do not use mutable objects as default values in a function (`y=[]`) as the object itself will be altered each time the function is run.  
 - Functions that mutate their input values or change the state of other program areas are said to have **side effects** - this is generally discouraged as they can cause bugs.  
@@ -24,7 +31,7 @@ my_func_mix(5, 1,2,3, y=10, z=4)
 ```
 
 ### Error Handling
-Error handling or exception control is dealing with errors that may occur in a program without crashing the program itself. This can be done using `if <condition>: raise Exception` but more common is `try catch`.  
+Error handling or exception control is dealing with errors that may occur in a program without crashing the program itself. This can be done using `if <condition>: raise Exception` but more common is `try except`.  
 ```python
 try:
     x = 4/0
@@ -34,12 +41,8 @@ except ZeroDivisionError:
 except IndexError:
     print('Index Error')
 except Exception as e:
-    print('NO: {}'.format(e))
-
-# Zero Division Error
+    print('{}'.format(e))
 ```
-
-
 
 ### Decorators
 Decorators are functions whose primary purpose is to wrap another function, they are denoted by **@**.  
@@ -135,7 +138,7 @@ dict(list(zip(keys, vals)))
 # {'Sea': 'blue', 'Soil': 'brown', 'Grass': 'green'}
 ```
 
-
+---
 # File I/O
 
 ```python
@@ -188,7 +191,7 @@ f = open(file_path, 'a')
 f.writelines('and went to market\n')
 ```
 
-
+---
 # Documentation / Metadata
 
 ### Program structure
@@ -210,8 +213,6 @@ type(d.bark)
 type(os)
 # module
 ```
-
-
 
 ### Documentation string
 When a function is defined, the first line is often a string which is called the *documentation string*.  
@@ -240,10 +241,9 @@ sys.getrefcount(my_str)
 # 2
 ```
 
-
 `dir(my_object)` - Shows all methods available for my_object
 
-
+---
 # Regular Expressions
 Regular Expressions (RegEx) are special codes used to search a string for matching characters or patterns. They can involve normal strings but also include characters for general cases of a type of element. The special characters are:    
 
@@ -273,7 +273,6 @@ Character sets
 --------------
 [ab]  : Match a or b
 [a-b] : Match anything from a to b
-[] :
 ~~~
 
 An example for finding phone numbers of the form *07392-244-112* or *07221 222 456*:  
@@ -288,7 +287,7 @@ pattern = re.compile(r'\d{5}[-\s]\d{3}[-\s]\d{3}')
 list(pattern.finditer(document))
 ```
 
-
+---
 # Modules
 
 ### PYODBC
@@ -301,7 +300,7 @@ def connect():
     conn = pyodbc.connect(Trusted_Connection = 'yes',
                           driver = '{SQL Server}',
                           server = '.',
-                          database = 'KubrickMonster')
+                          database = 'main')
     return conn
 
 # Define connection alias

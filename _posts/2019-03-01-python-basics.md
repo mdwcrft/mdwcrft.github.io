@@ -5,7 +5,14 @@ tags: []
 excerpt: "Types, Dictionaries, Sets, OOP"
 ---
 
+This is the first in a series of Python notes I made during the [Kubrick](https://kubrickgroup.com/) Data Engineering training course.    
+[#1: Basics]({{ site.url }}{{ site.baseurl }}/python-basics)  
+[#2: Advanced]({{ site.url }}{{ site.baseurl }}/python-advanced)  
+[#3: Scraping]({{ site.url }}{{ site.baseurl }}/python-scraping)  
+[#4: Pandas]({{ site.url }}{{ site.baseurl }}/python-pandas)  
+[#5: Matplotlib]({{ site.url }}{{ site.baseurl }}/python-matplotlib)  
 
+---
 # Sets
 Sets are used to store an unordered collection of unique objects. This means they cannot be indexed and will aggregate non-unique objects into one.  
 
@@ -14,7 +21,7 @@ my_set = set([1,1,1,2])
 my_set
 # {1, 2}
 
->>> my_set[0]
+my_set[0]
 # TypeError: 'set' object does not support indexing
 ```  
 
@@ -25,7 +32,7 @@ s2 = set([2,3,4])
 
 # .add() adds to the set
 s1.add(4)
-print(s)
+s
 # {1, 2, 3, 4}
 
 # .union() finds distinct values from both sets
@@ -78,11 +85,11 @@ my_dict.get('Age', 'Message if not found')
 # 50
 
 del my_dict['Age']
-print(my_dict)
+my_dict
 # {'FirstName':'John', 'LastName':'Appleseed'}
 
 my_dict.update({'LastName':'Johnson'})
-print(my_dict)
+my_dict
 # {'FirstName':'John', 'LastName':'Johnson'}
 ```
 
@@ -97,7 +104,7 @@ Object oriented programming (OOP) in Python is a way of writing code that is foc
 class Dog():
     # __init__ is run every time a new instance is created & handles initialisation
     def __init__(self, age): 
-        # Attributes are qualities of a object, they can be explicit or derived from an input
+        # Attributes are qualities of a object, they can be explicit or derived from an input and are defined in the __init__ function of the object
         self.colour = 'Brown'
         self.age = age
 
@@ -109,35 +116,10 @@ class Dog():
         return self.age * 7
 
 d = Dog(15)]
-d.bark()
+d.bark()  # Methods have curly brackets
 # Woof!
-```
-
-### Attributes
-Attributes are values specifically associated with an object and are defined in the __init__ function of the object.  
-```python
-class Dog():
-    def __init__(self):
-        self.colour = 'brown'
-
-d = Dog()
-d.colour
+d.colour  # Attributes have no brackets
 # 'brown'
-```
-
-### Methods
-Methods are functions associated with an object and are defined in the object definition. They can be distinguished from attributes by their curly brackets ().  
-```python
-class Dog():
-    def __init__(self):
-        pass
-    
-    def bark(self):
-        print('Woof!')
-
-d = Dog()
-d.bark()
-# Woof!
 ```
 
 ### Inheritance
@@ -231,14 +213,13 @@ class Circle():
         return a
 ```
 
-
-
+---
 # Objects & Types
 Objects in python are data points stored in memory. Every object has an identity, type, & value which can all be accessed with functions.  
 
-When an object is created its ID and type are fixed, the value can only be changed if it is a mutable object;  
-**Immutable**: int, float, tuple, complex, set  
-**Mutable**: list, dictionary  
+When an object is created its ID and type are fixed, the value can only be changed if it is a mutable object  
+- **Immutable**: int, float, tuple, complex, set  
+- **Mutable**: list, dictionary  
 
 When variables assigned to immutable objects are given a new value they will create new objects in memory with new ID's. Mutable objects can have their value change and keep the same ID.  
 

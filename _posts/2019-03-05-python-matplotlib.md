@@ -5,19 +5,25 @@ tags: []
 excerpt: "Basic plots & Pandas plots"
 ---
 
+This is the fifth in a series of Python notes I made during the [Kubrick](https://kubrickgroup.com/) Data Engineering training course.    
+[#1: Basics]({{ site.url }}{{ site.baseurl }}/python-basics)  
+[#2: Advanced]({{ site.url }}{{ site.baseurl }}/python-advanced)  
+[#3: Scraping]({{ site.url }}{{ site.baseurl }}/python-scraping)  
+[#4: Pandas]({{ site.url }}{{ site.baseurl }}/python-pandas)  
+[#5: Matplotlib]({{ site.url }}{{ site.baseurl }}/python-matplotlib)  
+
+---
 # Basic Matplotlib
 [Matplotlib](https://matplotlib.org/) is an advanced plotting library for Python, it has a lot of functionality so I will just cover the minimum here.  
-
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-```
 
 ### Interfaces
 There are two main ways of setting up a plot area called interfaces; **MATLAB Style Interface** (Stateful) and **Object Oriented Interface** (Non-Stateful).  
 
 ```python
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
 # MATLAB interface example
 plt.figure()  # Create figure area
 
@@ -89,9 +95,9 @@ x = np.linspace(0, 10, 20)
 
 fig, ax = plt.subplots()
 ax.scatter(x, np.sin(x), 
-           sizes=np.random.uniform(30, 300, 20), 
-           c = np.random.uniform(30, 300, 20),
-           cmap = 'magma')
+           sizes=np.random.uniform(30, 300, 20),  # Random marker sizes
+           c = np.random.uniform(30, 300, 20),    # Random marker colours
+           cmap = 'magma')  # Marker colour map
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/6-scatter.PNG" alt="Styled scatter graph of Sine curve">
@@ -155,6 +161,7 @@ df.plot.box()
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/6-box.PNG" alt="Box plot">
 
+---
 # Pandas Plotting
 Part of Pandas plotting is the scatter matrix which shows a scatter graph of every variable in a DataFrame against every other variable. This is very useful for initial probing and visual analysis of a dataset.  
 

@@ -5,6 +5,14 @@ tags: []
 excerpt: "JSON, BeautifulSoup, & Selenium"
 ---
 
+This is the third in a series of Python notes I made during the [Kubrick](https://kubrickgroup.com/) Data Engineering training course.    
+[#1: Basics]({{ site.url }}{{ site.baseurl }}/python-basics)  
+[#2: Advanced]({{ site.url }}{{ site.baseurl }}/python-advanced)  
+[#3: Scraping]({{ site.url }}{{ site.baseurl }}/python-scraping)  
+[#4: Pandas]({{ site.url }}{{ site.baseurl }}/python-pandas)  
+[#5: Matplotlib]({{ site.url }}{{ site.baseurl }}/python-matplotlib)  
+
+---
 # Web Scraping
 The [requests](http://docs.python-requests.org/en/master/) module can be used to either **get**, **post**, or **put** data to and from an online server. Commonly **get** is used to retrieve information from or about a website, this is called web scraping. Another common usage is with [APIs](https://apilist.fun/) which return pre-formatted data.  
 
@@ -29,7 +37,6 @@ response = json.loads(r.text) # Load JSON content into a dictionary
 
 The dictionary `response` can then be read from and altered just like any python object. It's best to run `response.keys()` after this to see the categories of the JSON dictionary.   
 
-#### JSON request blocks
 Some websites limit the number of requests from a single IP address and will block your request if run too frequently. To get around this you must send the *user_agent* string as part of the `.gets` statement. The user_agent can be found by going to the page on chrome, then *right-click -> inspect -> Network -> click element in page -> select any element in Name list -> scroll to bottom of details*.  
 
 ```python
