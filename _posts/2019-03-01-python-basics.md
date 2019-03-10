@@ -14,7 +14,7 @@ This is the first in a series of Python notes I made during the [Kubrick](https:
 
 ---
 # Sets
-Sets are used to store an unordered collection of unique objects. This means they cannot be indexed and will aggregate non-unique objects into one.  
+Sets are used to store an unordered collection of unique objects. This means they cannot be indexed and will aggregate non-unique objects into one. It is also mutable, like a list and unlike a tuple.
 
 ```python
 my_set = set([1,1,1,2])
@@ -63,7 +63,7 @@ s1.isdisjoint({4,5,6})
 ```
 
 # Dictionaries
-Dictionaries are 'mapping objects'; associative arrays with objects indexed by keys  
+Dictionaries are 'mapping objects'; associative arrays with objects indexed by keys. They are also mutable, like a list or set.  
 
 ```python
 my_dict = {  'FirstName':'John'
