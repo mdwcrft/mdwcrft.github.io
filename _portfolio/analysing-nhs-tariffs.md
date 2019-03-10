@@ -11,14 +11,16 @@ As part of the [Kubrick](https://kubrickgroup.com/) training scheme I completed 
 
 The first part of the project involved combining some dummy admissions data with real NHS tariff data to determine the real costs for each theoretical admission. The repositry containing all SQL code for part 1 can be found [here](https://github.com/mdwcrft/NHS-Tariff-Project).  
 
-Secondly, we were to create a Tableau dashboard visualising the changes in tariff from 2017-18 to 2018-19 across all diagnosis and admission types. The final dashboard for part 2 can be found [here](https://public.tableau.com/shared/PR5KGZDXB?:display_count=yes) and is embedded at the end of this post.  
-
+Secondly, we were to create a Tableau dashboard visualising the changes in tariff from 2017-18 to 2018-19 across all diagnosis and admission types. The final dashboard for part 2 can be found [here](https://public.tableau.com/shared/PR5KGZDXB?:display_count=yes) and is embedded at the end of this post.   
+  
+  
 ---
 # Data
 - [NHS Tariffs 2017/18 & 2018/19](https://improvement.nhs.uk/resources/national-tariff-1719/)  
 - [HRG Grouper tool](https://digital.nhs.uk/services/national-casemix-office/downloads-groupers-and-tools/payment-hrg4-2017-18-local-payment-grouper)  
 - [Hospital activity](https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-activity/quarterly-hospital-activity/qar-data/)  
-- Sample episode data can be found on the HRG Grouper page  
+- Sample episode data can be found on the HRG Grouper page   
+  
 
 ---
 # Part 1: Real Costs by Episode
@@ -225,9 +227,12 @@ EXEC dbo.usp_tariffs18 @HESTVP
 ```
 
 A stored procedure of this format was made for the 2017-18 tariffs and for the 2018-19 tariffs seperately.  
+  
 
 ---
 # Part 2: Visualise Tariff Changes
 The second part of the project was to visualise tariff changes by diagnoses, chapter, and patient type. I chose a simple approach where the user can select diagnoses chapter and patient type to see the average change in costs, change in costs by diagnoses, and patient density by UK county.  
 
-<iframe seamless frameborder="0" src="https://public.tableau.com/views/NHSTariffs/Dashboard?:embed=y&:display_count=yes" width = '650' height = '450' scrolling='yes' ></iframe>    
+The dashboard is on [Tableau Public](https://public.tableau.com/views/NHSTariffs/Dashboard?:embed=y&:display_count=yes) and a screenshot is below. 
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/p8-dashboard.png" alt="NHS Tariff Changes Dashboard">
