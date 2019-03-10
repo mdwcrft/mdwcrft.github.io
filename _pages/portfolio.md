@@ -15,11 +15,12 @@ feature_row1:
     title: "Optimizing Power Grids for rural Rwanda"
     excerpt: "A study on optimal grid architectures for Sub-Saharan communities [HOMER]"
     url: "/portfolio/optimizing-power-grids"
-  - image_path: /assets/images/p3-cover.png
-    title: "Analysis of a Permanent Magnet Synchronous Machine"
-    alt: "Analysis of a Permanent Magnet Synchronous Machine"
-    excerpt: "Finite Element and Equivalent Circuit Analysis of Magnetic Rotors [FEMM, MATLAB]"
-    url: "/portfolio/permanent-magnet-analysis"
+  - image_path: /assets/images/p8-cover.png
+    alt: "Analysing NHS Tariff Changes"
+    title: "Analysing NHS Tariff Changes"
+    excerpt: "Cleaning and visualising NHS tariff data from 2017-19 [SQL, Tableau]"
+    url: "/portfolio/analysing-nhs-tariffs"
+  
 
 feature_row2:
   - image_path: /assets/images/p4-cover.png
@@ -44,7 +45,12 @@ feature_row3:
     title: "Capacitive Sensing Cans"
     excerpt: "Sensing hand movements with aluminium cans [LTSpice, Analog electronics]"
     url: "/portfolio/cap-sensing-can"
-# - image_path: /assets/images/p8-cover.png
+  - image_path: /assets/images/p3-cover.png
+    title: "Analysis of a Permanent Magnet Synchronous Machine"
+    alt: "Analysis of a Permanent Magnet Synchronous Machine"
+    excerpt: "Finite Element and Equivalent Circuit Analysis of Magnetic Rotors [FEMM, MATLAB]"
+    url: "/portfolio/permanent-magnet-analysis"
+#  - image_path: /assets/images/p9-cover.png
 #    alt: "VLSI Chip Design"
 #    title: "VLSI Chip Design"
 #    excerpt: "Designing CMOS gates for a VLSI chip [MATLAB, WinLASI]"
