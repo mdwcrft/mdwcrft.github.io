@@ -153,6 +153,7 @@ code,
 kbd,
 samp,
 pre {
+  background-color: $code-background-color;
   font-family: $monospace;
 }
 
