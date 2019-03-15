@@ -223,6 +223,8 @@ When an object is created its ID and type are fixed, the value can only be chang
 
 When variables assigned to immutable objects are given a new value they will create new objects in memory with new ID's. Mutable objects can have their value change and keep the same ID.  
 
+Immutable objects are **hashable** which means they have hash value that never changes, a `__hash__()` method, and a `__eq__()` method. Instances of user defined classes are also hashable, their hashvalue is their `id()`. If two hashable objects are found to be equal using `__eq__()` then they are pointing to the same object in memory and will share one ID.  
+
 ```python
 x = 3.2
 
