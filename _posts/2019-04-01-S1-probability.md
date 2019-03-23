@@ -1,10 +1,9 @@
 ---
-title: "Stats 1: Probability"
+title: "Stats #1: Probability"
 date: 2019-02-01
 tags: []
 excerpt: "Definitions & Random Variables"
 encoding: UTF-8
-mathjax: True
 ---
 
 # Definitions
