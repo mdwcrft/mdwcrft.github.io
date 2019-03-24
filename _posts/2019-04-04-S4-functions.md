@@ -22,28 +22,44 @@ A loss function is used to penalize bad predictions. It is applied to the output
 
 $$(y,\hat y) \rightarrow L(y,\hat y)$$
 
-### Regression
+### General form (distance based)
 
-Squared error loss:
+$$L(y,\hat y) = f(|y-\hat y|)$$
+
+### Squared error loss
 
 $$L(y,\hat y) = (y -\hat y)^2$$
 
-Absolute error loss:
+### Absolute error loss
+
+Absolute error is used for more noisy data or if there are outliers
 
 $$L(y,\hat y) = |y -\hat y|$$
 
-Absolute error is used for more noisy data or if there are outliers.
+### Margin based
 
-### Classification
+$$L(y,\hat y) = f(y\hat y)$$
 
-Misclassification Loss:
+### Hinge loss
+
+Used mostly for Support Vector Machines (SVM's)
+
+$$L(y,\hat y) = max(1-y\hat y, 0)$$
+
+<figure style="width: 100%" class="align-centre">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/8-hinge.png" alt="Hinge Loss Plot">
+</figure>
+
+### Misclassification Loss
+
+For classification problems
 
 $$L(y,\hat y) = 1(y \neq \hat y)$$
 
 0 if $y = \hat y$,  
 1 if $y \neq \hat y$
 
-Log loss:
+### Log loss:
 
 $$L(y,\hat y) = ylog(\hat y) - (1-y)log(1-\hat y)$$
 
