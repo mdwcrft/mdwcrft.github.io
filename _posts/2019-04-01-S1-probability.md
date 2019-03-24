@@ -31,6 +31,13 @@ encoding: UTF-8
 2. Probability of all events adds to 1: $P(\Omega) = 1$
 3. Disjoint additivity: For mutually exclusive A1 & A2; $P(A1 \cup A2) = P(A1) + P(A2)$
 
+### Symbols
+
+\* = Best  
+^ = Estimated from data
+
+$x_j^{(i)}$ = The $j$th predictor (col) of the $i$th observation (row) of $x$
+
 ---
 # Probabilities on Finite Sample Spaces
 
