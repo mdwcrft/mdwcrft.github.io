@@ -2,7 +2,7 @@
 title: "Machine Learning #4: Model Optimization"
 date: 2019-02-01
 tags: []
-excerpt: ""
+excerpt: "Regularization & Bagging"
 encoding: UTF-8
 ---
 
