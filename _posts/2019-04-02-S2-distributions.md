@@ -104,7 +104,6 @@ ax.plot(x, ss.norm.pdf(x, 0, 1.5))
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/7-norm-pdf.png" alt="Gaussian Plot">
 </figure>
 
-
 ## Poisson
 
 A random variable X denoting the number of times a rare event occurs follows a Poisson distribution as the number of trials become large. Poisson is positively skewed and tends to normal as its mean $\mu$ becomes sufficiently large.  
