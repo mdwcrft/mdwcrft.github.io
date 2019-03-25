@@ -53,7 +53,7 @@ Evaluating regression models usually involves a form of loss function.
 |$R^2$|$1 - \frac{RSS}{TSS}$|How well the model performs compared to a constant model|
 |RSS/TSS|$RSS = \sum _{i=1}^N (y^{(i)} - \hat y^{(i)})^2$, $TSS = \sum _{i=1}^N (y^{(i)} - avg(\hat y^{(i)}))^2$|Risidual sum of squares and Total sum of squares|
 |MAPE|$\frac{100}{N} \sum ^N_{i=1}\|\frac{x_i - \hat x_i}{x_i}\|$|Mean absolute percentage error|
-|SMAPE||Symmetric mean absolute percentage error|
+|SMAPE|$\frac{100}{N} \sum ^N_{i=1}\|\frac{2(x_i - \hat x_i)}{x_i + \hat x_i}\|$|Symmetric mean absolute percentage error|
 
 ---
 # Evaluating Classifiers
