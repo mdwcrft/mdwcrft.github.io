@@ -18,20 +18,19 @@ $$\mathscr F = \{\sum_{i=0}^P\beta_ix_i|\beta_i \in \mathbb R \forall _i \}$$
 
 $$=\{\beta^Tx|\beta \in \mathbb R^{P+1}\}$$
 
-Then to find the best $\beta$:
+$\forall$ means 'for all', then to find the best $\beta$:
 
 $$\hat \beta = argmin_\beta \hat R(\beta ^T x)$$
 
 $$= argmin_\beta \frac1N \sum_{i=1}^N (y^{(i)} - \beta ^ T x^{(i)})$$
-
-$y^{(i)}$ is the actual value.  
-$\beta ^ T x^{(i)}$ is the predicted value
 
 Then,  the Empirical Risk Minimizer is:
 
 $$\hat f = argmin_{f \in \mathscr F} \hat R(f)$$
 
 $$\hat f(x) = \hat \beta ^T x = \sum_{i=0}^P \hat \beta _i x_i$$
+
+These equations are all the same as the definitions, except that the predicted value is represented by $\beta ^ T x^{(i)}$ and the actual value by $y^{(i)}$.
 
 > *Example*: Predicting life satisfaction from GDP & gender
 > 
@@ -190,8 +189,6 @@ Coefficient: [[0.26042762]]
 
 The prediction function is then $f(x) = sigmoid(-43.89 + 0.26*Height)$  
 
-Whereas for linear regression it would be $f(x) = -43.89 + 0.26*Height$
-
 The prediction function can be visualised with a scatter plot
 
 ```python
@@ -334,6 +331,7 @@ The Lasso will return *sparse* solutions with many 0's in the $\beta$ vector. Th
 
 <figure style="width: 100%" class="align-centre">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/9-lassovsridge.png" alt="Lasso and Ridge Regression Comparison">
+</figure>
 
 Lasso regression can be implemented with the sklearn [lasso](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html) module. It is applied in exactly the same way as the ridge. The loss v `alpha` plot is shown below.
 
