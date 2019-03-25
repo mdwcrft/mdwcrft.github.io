@@ -20,7 +20,9 @@ margin = $y * \hat f(x)$ = actual * predicted score
 
 ### Objective Function
 
-$$J(\beta, b) = \lambda ||\beta ||^2_2 + \frac1N \sum _{i=1}^N max(0, y^{(i)}(b + \beta ^T x^{(i)}))$$
+The SVC objective function is just the average hinge loss of the predictions with a regularisation term $\lambda ||\beta ||^2_2$ applied to reduce complexity.
+
+$$J(\beta, b) = \lambda ||\beta ||^2_2 + \frac1N \sum _{i=1}^N max(0, 1 - y^{(i)}(b + \beta ^T x^{(i)}))$$
 
 $$(\hat \beta, \hat b) = argmin_{\beta, b}J(\beta, b)$$
 
@@ -67,7 +69,7 @@ ax.set_ylim(-0.5)
 
 KNN is a prediction method that classifies a new point based on the class and euclidean distance ($L^2$ norm) of its K nearest neighbours. K is a hyperparameter and is set in advance, KNN is also *non-parametric* meaning we do not know the number of parameters before fitting. The set of K nearest points to x is denoted by $N_K(x)$.
 
-The prediction for *regression* is the average of the K-nearest neighbours:
+The prediction for *regression* is the average value of the K-nearest neighbours:
 
 $$\hat y = \hat f(x) = \frac1K \sum_{i:x^{(i)} \in N_K(x)} y^{(i)}$$
 
@@ -278,7 +280,7 @@ Bayes Theorem:
 
 $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 
-With naive bayes we assume that the data comes from a model where $y$ influences all $x$'s.
+With naive bayes we assume that the data comes from a model where $y$ influences all $x$'s and each $x$ is independent from eachother (hence naive).
 
 We know in this case:
 $$P(x_1) = P(x_1|y)P(y)$$
@@ -291,3 +293,5 @@ $$P(y, x_1, x_2) = P(x_1|y)P(x_2|y)P(y)$$
 > Suppose we know $P(y)$, $P(x_1)$, $P(x_2)$ then, by Bayes:  
 > 
 > $P(y\|x_1,x_2) = \frac{P(x_1, x_2\|y)P(y)}{P(x_1, x_2)}$
+
+Naive Bayes is a very good classifier and can outperform most others if you can guarantee independent predictors (not easy).
