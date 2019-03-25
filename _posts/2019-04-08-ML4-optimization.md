@@ -2,9 +2,56 @@
 title: "Machine Learning #4: Model Optimization"
 date: 2019-02-01
 tags: []
-excerpt: "Regularization & Bagging"
+excerpt: "Feature Engineering, Regularization, & Bagging"
 encoding: UTF-8
 ---
+
+# Feature Engineering
+
+Feature engineering requires using domain knowledge to make better predicting features from the input data. For example, given GDP and population a new feature could be GDP per capita or the log of GDP per capita and these may perform better as a predictor on a model.
+
+### One-Hot Encoding
+
+One-hot encoding aka 'dummy variables' is a method of converting strings to binary so that an algorithm can understand and compress the information. For each string value in a category a new binary truth column is created.
+
+> *Example*: 'Dog' -> 1 0 0, 'Cat' -> 0 1 0, 'Rat' -> 0 0 1
+
+### Feature Maps
+
+A feature map $\Phi$ is a function mapping a raw vector input $x$ to a new vector that is used in a model.
+
+$$\Phi: \mathbb R^P \to \mathbb R^q$$
+
+> *Example*: Mapping weight & height to BMI
+
+### Feature Selection
+
+Selecting a sub-set of features to use in the prediction model. This can be done **manually** or **automatically** by a feature selecting algorithm.  
+The coefficient associated with a feature is **not** a good predictor of importance as the features are often on different scales. If we standardise features (minus column mean, divide by stdev) and then perform regression then the coefficients can be compared for relative feature importance.
+
+> *Example*: $\hat y = 10x_1 + 0.2x_2 + 5$  
+> If $x_1$ and $x_2$ are standardised then we can say that $x_1$ is a more important feature as $\beta _1 = 10$
+
+### Best Subset Selection
+
+For a set of features $\{x_1, x_2, x_3, ... ,x_P\}$ best subset selection is the subset of features such that the generalization error is minimized. For $P$ features we must test $2^P$ models which is very computationally expensive, therefor it only works for a small $P$.
+
+### Forward Step-Wise Selection
+
+Given $p$ predictors;
+
+1. Start with constant model $\hat f_0 = \beta _0$
+2. For $i$ from $1$ to $p$:
+   - Find the best predictor $x_*$
+   - Add $x_*$ to predictors used in $\hat f_{i-1}$
+3. Result is a sequence of models, Eg; 
+   - $\hat f_0 = \hat \beta _0^0$
+   - $\hat f_1 = \hat \beta _0^1 + \hat \beta _3^1x_3$
+   - $\hat f_2 = \hat \beta _0^2 + \hat \beta _3^2x_3 + \hat \beta _5^2x_5$
+   - $\hat f_3 = \hat \beta _0^3 + \hat \beta _3^3x_3 + \hat \beta _5^3x_5 + \hat \beta _1^3x_1$
+4. Evaluate each model from the sequence on the test set and choose the best
+
+The $\hat \beta$ values are different for each iteration. Each iteration uses all the features from the previous iteration. This is always done only on the training data.
 
 ---
 # Regularization
@@ -14,6 +61,32 @@ It is common for test error to decrease with some added complexity but to then i
 <figure style="width: 100%" class="align-centre">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/11-complex-error.png" alt="Complexity vs Test Error Plot">
 </figure>
+
+### Complexity Measure
+
+The complexity measure $\Omega$ of $f$ is a functional that measures complexity.
+
+$$\Omega (f): \mathscr F \to [0,\infty]$$
+
+### Ivanov Regularization
+
+AKA constrained regularization.  
+ERM:
+
+$$\hat f = argmin_{f \in \mathscr F} \hat R(f)$$
+
+Such that $\Omega(\hat f) \leq c$
+
+### Tikhonov Regularization
+
+Here a $\lambda$ term is used as a penality for complexity.  
+AKA penalised regularization
+
+$$\hat f = argmin_{f \in \mathscr F} \hat R(f) + \lambda \Omega (f)$$
+
+Where $\lambda \geq 0$
+
+In many cases, when c and $\lambda$ are equivalent: Ivanhov and Tikhonov regularization gives the same prediction function.
 
 ---
 # Model Averaging
