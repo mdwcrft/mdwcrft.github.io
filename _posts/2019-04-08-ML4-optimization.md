@@ -6,6 +6,7 @@ excerpt: "Feature Engineering, Regularization, & Bagging"
 encoding: UTF-8
 ---
 
+---
 # Feature Engineering
 
 Feature engineering requires using domain knowledge to make better predicting features from the input data. For example, given GDP and population a new feature could be GDP per capita or the log of GDP per capita and these may perform better as a predictor on a model.
@@ -34,7 +35,7 @@ The coefficient associated with a feature is **not** a good predictor of importa
 
 ### Best Subset Selection
 
-For a set of features $\{x_1, x_2, x_3, ... ,x_P\}$ best subset selection is the subset of features such that the generalization error is minimized. For $P$ features we must test $2^P$ models which is very computationally expensive, therefor it only works for a small $P$.
+For a set of features $\{x_1, x_2, x_3, ... ,x_P\}$ best subset selection is the subset of features such that the generalization error is minimized. For $P$ features we must test $2^P$ models which is very computationally expensive, therefore it only works for a small $P$.
 
 ### Forward Step-Wise Selection
 
@@ -56,7 +57,7 @@ The $\hat \beta$ values are different for each iteration. Each iteration uses al
 ---
 # Regularization
 
-It is common for test error to decrease with some added complexity but to then increase with too much added complexity as they tend to start overfitting. Regularization is used to *reduce* model complexity, mostly to reduce *over fitting*.
+It is common for test error to decrease with some added complexity but to then increase with too much added complexity as the models tends to start overfitting. Regularization is used to *reduce* model complexity, mostly to reduce *overfitting*.
 
 <figure style="width: 100%" class="align-centre">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/11-complex-error.png" alt="Complexity vs Test Error Plot">
@@ -70,8 +71,7 @@ $$\Omega (f): \mathscr F \to [0,\infty]$$
 
 ### Ivanov Regularization
 
-AKA constrained regularization.  
-ERM:
+AKA constrained regularization.
 
 $$\hat f = argmin_{f \in \mathscr F} \hat R(f)$$
 
@@ -79,8 +79,8 @@ Such that $\Omega(\hat f) \leq c$
 
 ### Tikhonov Regularization
 
-Here a $\lambda$ term is used as a penality for complexity.  
-AKA penalised regularization
+AKA penalised regularization, a $\lambda$ term is used as a penality for complexity.  
+
 
 $$\hat f = argmin_{f \in \mathscr F} \hat R(f) + \lambda \Omega (f)$$
 
@@ -91,7 +91,7 @@ In many cases, when c and $\lambda$ are equivalent: Ivanhov and Tikhonov regular
 ---
 # Model Averaging
 
-Model averaging can reduce overfitting.
+Model averaging can reduce overfitting without changing the expectation.
 
 Given $B$ independent training sets of equal size we can train $B$ independent prediction functions $(\hat f_1, ... \hat f_B)$.
 
@@ -107,7 +107,7 @@ This shows that model averaging does not change the expected prediction.
 $$var(\hat f_{avg}(x_0)) = var(\frac 1B \sum ^B_{i=1} \hat f_i(x_0))$$
 $$ = \frac 1B var(\hat f_1(x_0))$$
 
-This shows that model averaging can reduct the error due to variance.  
+This shows that model averaging can reduce the error due to variance.  
 
 However, in real life we do **not** have $B$ independent datasets.
 
