@@ -2,7 +2,7 @@
 title: "Machine Learning #5: Model Evaluation"
 date: 2019-02-01
 tags: []
-excerpt: ""
+excerpt: "Diagnostics, ROC Curves, & Validation"
 encoding: UTF-8
 ---
 
@@ -170,9 +170,3 @@ This method is used to ensure representative test and train groups. It involves 
 
 > *Example*:  
 > 11111100 -> train:[1110], test=[1110]
-
-
-
-
-
-
