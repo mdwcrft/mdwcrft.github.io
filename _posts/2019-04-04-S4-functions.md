@@ -134,7 +134,7 @@ There is typically a trade off between estimation and approximation errors. We w
 High bias/approximation error = Underfitting (Model is independent of training data)  
 High variance/estimation error = Overfitting (Model is too dependent on training data)  
 
-If $\tau$ is a random fixed size training set, $y=f(X) + \epsilon$ where $f(X) = E[y\|X]$ and $E[\epsilon] = 0$, and $(y_0, x_0)$ is a new fixed arbitrary point, the expected MSE can be expanded.
+If $\tau$ is a random fixed size training set, we can add an error variable $\epsilon$ to the prediction function $f(X) = E[y\|X]$ to give $y=f(X) + \epsilon$. The error variable has an expectation $E[\epsilon] = 0$, and $(y_0, x_0)$ is a new fixed arbitrary point, the expected MSE can be expanded to show the different error types.
 
 $$E_\tau[(y_0- \hat f(x_0))^2]$$
 
@@ -149,8 +149,8 @@ $$= \sigma_\epsilon^2 + f(x_0)^2 - 2f(x_0)E_\tau[\hat f(x_0)] + E_\tau[\hat f(x_
 $$= \sigma_\epsilon^2 + (f(x_0) - E[\hat f(x_0)])^2 + var(\hat f(x_0))$$
 
 - *irreduceable error*: $\sigma_\epsilon^2$ 
-- *Bias squared*: $(f(x_0) - E[\hat f(x_0)])^2$  
-- *Variance*: $var(\hat f(x_0))$
+- *Bias squared* (approximation): $(f(x_0) - E[\hat f(x_0)])^2$  
+- *Variance* (estimation): $var(\hat f(x_0))$
 
 <figure style="width: 100%" class="align-centre">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/8-bias-variance.png" alt="Bias Variance Trade Off Plot">
