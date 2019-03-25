@@ -25,6 +25,8 @@ encoding: UTF-8
 |Conditional Probability|P(A\|B)|Probability of event A GIVEN B|
 |'or' Probability|P(A$\cup$B)|Probability of A OR B|
 
+Generally, joint probability applied to events that can occur simultaneously whereas conditional implies the events follow eachother.
+
 ### Probability Axioms
 
 1. Non-Negativity: $P(A) \geq 0$
