@@ -151,7 +151,7 @@ Cross validation involves splitting a dataset into three subsets;
 
 ### K-Fold Cross-Validation
 
-A method for estimate the generalization error which is the *risk* of the function. This is useful for evaluating how many features to include in the training set to minimize both approximation and estimation error. When K=N this is called 'leave-one-out' cross validation.
+The training set is split into K chunks, iteratively trained on K-1 sets and tested on the Kth set to reduce overfitting. This helps to estimate the generalization error which is the *risk* of the function. It is also useful for evaluating how many features to include in the training set to minimize both approximation and estimation error. When K=N this is called 'leave-one-out' cross validation.
 
 1. Divide data into K partitions of roughly equal size (typically K is 4-10)
 2. For i in K:
