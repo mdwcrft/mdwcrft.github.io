@@ -17,7 +17,7 @@ $$E[X] = \sum_xxf_X(x)$$
 
 CONTINUOUS:
 
-$$E[X] = \int_{-\infty}^{\infty} xf_X(x)dx = \int xdf_X(x)$$
+$$E[X] = \int_{-\infty}^{\infty} xf_X(x)dx$$
 
 > *Example*:  
 > $f_X(-1) = 0.1$  
@@ -35,7 +35,7 @@ $$E[\sum_{i=1}^N X_i] = \sum_{i=1}^NE[X_i]$$
 ---
 # Conditional Expectation
 
-Conditional expectation is just the expectation of some variable given some other condition.
+Conditional expectation is just the expectation of some variable given some other condition. The equations are the same but use the conditional distribution for probability values.
 
 DISCRETE:
 
@@ -106,7 +106,7 @@ $$\bar X_N \rightarrow \mu=E[X]$$
 ---
 # Law of the Unconscious Statistician
 
-LOTUS is a rule that is used to calculate the expectation of a function of a random variable $g(X)$. This is useful if we know the probability distribution of $X$ but don't know the distribution of $g(X)$.
+LOTUS is a rule that is used to calculate the expectation of a function of a random variable $g(X)$. This is useful if we know the probability distribution of $X$ but don't know the distribution of $g(X)$. The equations are the same as normal expectation, with a function $g(x)$ substituted for $x$.
 
 $$E[Y] = E[g(X)] = \int g(x)dF_X(x)$$
 
@@ -148,7 +148,7 @@ Inequalities relate probabilities to expectations by providing bounds for the CD
 
 ### Markhov's Inequality
 
-The Markhov inequality gives an upper bound to the probaility of a non-negative function of a random variable exceeding some positive constant.
+The Markhov inequality gives an upper bound to the probability of a non-negative function of a random variable exceeding some positive constant.
 
 ### Chebychev's Inequality
 
