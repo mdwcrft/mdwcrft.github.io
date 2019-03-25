@@ -86,7 +86,7 @@ Some of the most common random distributions are listed below.
 
 ## Gaussian
 
-Also known as the *normaal* distribution it is a very general case, and can be applied to almost every situation by the virtue of Central Limit Theorem. The shape is known as a *bell curve* and it is symmetric about the mean.
+Also known as the *normal* distribution it is a very general case, and can be applied to almost every situation by the virtue of Central Limit Theorem. The shape is known as a *bell curve* and it is symmetric about the mean.
 
 Plotting the Normal PDF in Python:
 
