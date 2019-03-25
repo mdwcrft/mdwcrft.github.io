@@ -22,19 +22,15 @@ A loss function is used to penalize bad predictions. It is applied to the output
 
 $$(y,\hat y) \rightarrow L(y,\hat y)$$
 
-### General form (distance based)
-
-$$L(y,\hat y) = f(|y-\hat y|)$$
-
-### Squared error loss
-
-$$L(y,\hat y) = (y -\hat y)^2$$
-
 ### Absolute error loss
 
 Absolute error is used for more noisy data or if there are outliers
 
 $$L(y,\hat y) = |y -\hat y|$$
+
+### Squared error loss
+
+$$L(y,\hat y) = (y -\hat y)^2$$
 
 ### Margin based
 
@@ -121,12 +117,12 @@ $$ER(\hat f_{\mathscr F}) = R(\hat f_{\mathscr F}) - R(f_{\mathscr F}^*) + R(f_{
 (Where $R(f_{\mathscr F}^*)$ is the best risk within the constrained function space.)  
 This expanded equation can be decomposed to form two seperate error measures.
 
-**Estimation Error**:  
+**Estimation Error** / **Variance**:  
 The error between the function and the best function in the constrained space
 
 $$R(\hat f_{\mathscr F}) - R(f_{\mathscr F}^*)$$
 
-**Approximation Error**:  
+**Approximation Error** / **Bias**:  
 The error between the best function in the constrained space and the bayes function
 
 $$R(f_{\mathscr F}^*) - R(f^*)$$
@@ -135,16 +131,10 @@ There is typically a trade off between estimation and approximation errors. We w
 
 ### Approximation/Estimation Error Trade-off
 
-Bias and variance can be used as terms to describe approximation and estimation error respectively.  
-
 High bias/approximation error = Underfitting (Model is independent of training data)  
 High variance/estimation error = Overfitting (Model is too dependent on training data)  
 
-$$y=f(X) + \epsilon$$
-
-Where $f(X) = E[y\|X]$ and $E[\epsilon] = 0$.
-
-If $\tau$ is a random fixed size training set and $(y_0, x_0)$ is a new fixed arbitrary point.
+If $\tau$ is a random fixed size training set, $y=f(X) + \epsilon$ where $f(X) = E[y\|X]$ and $E[\epsilon] = 0$, and $(y_0, x_0)$ is a new fixed arbitrary point, the expected MSE can be expanded.
 
 $$E_\tau[(y_0- \hat f(x_0))^2]$$
 
