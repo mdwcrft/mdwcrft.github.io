@@ -21,6 +21,12 @@ Data_Analysis:
     excerpt: "Developing an electrification model for World Bank investments [Excel]"
     url: "/portfolio/excel-modelling-gtf"
   
+Data_Analysis2:
+  - image_path: /assets/images/p10-tool.gif
+    alt: "Predicting Flooding for the UK"
+    title: "Predicting Flooding for the UK"
+    excerpt: "Group Project to Build a Flood Risk Prediction Tool [SQL, Python, Dash]"
+    url: "/portfolio/flood-prediction"
 
 Web_Development:
   - image_path: /assets/images/p4-cover.png
@@ -66,6 +72,7 @@ Other:
 # Data Analysis
 {% include feature_row id="Data_Analysis" %}
 
+{% include feature_row id="Data_Analysis2" %}
 
 # Web Development
 {% include feature_row id="Web_Development" %}
